@@ -1,0 +1,730 @@
+{
+    "version": "Versie",
+    "moreOptions": "Meer Opties",
+    "path": "Pad",
+    "discardChanges": "Wijzigingen Verwerpen",
+    "checkForUpdates": "Controleer op Updates",
+    "invalidJSON": "Ongeldige JSON",
+    "eg": "b.v. {item}",
+    "advancedConfiguration": "Geavanceerde Configuratie",
+    "appData": "App Gegevens",
+    "appLogs": "App Logboeken",
+    "localAIServiceLogs": "Lokale AI Service Logboeken",
+    "cancel": "Annuleren",
+    "confirm": "Bevestigen",
+    "new": "Nieuwe {item}",
+    "edit": "Bewerken {item}",
+    "select": "Selecteer {item}",
+    "fetch": "Haal {item} Op",
+    "refetch": "Haal {item} Opnieuw Op",
+    "filter": "Filter {item}",
+    "search": "Zoeken {item}",
+    "provider": "Leverancier",
+    "learnMore": "Leer meer.",
+    "name": "Naam",
+    "model": "Model | Modellen",
+    "modelId": "Model ID",
+    "toggle": "Wissel {item} In/Uit",
+    "loading": "Laden {item}...",
+    "license": "Licentie",
+    "apiVersion": "API Versie",
+    "settings": {
+        "label": "Instelling | Instellingen",
+        "description": "Bewerk Msty's Instellingen",
+        "general": {
+            "label": "Algemeen",
+            "language": {
+                "label": "Taal",
+                "description": "Selecteer uw voorkeurstaal voor Msty. Als uw gewenste taal niet beschikbaar is, kunt u bijdragen aan vertalingen via onze i18n repository."
+            },
+            "autoGenerateChatTitle": {
+                "label": "Chat Titel Automatisch Genereren",
+                "description": "Wanneer ingeschakeld, worden nieuwe chat titels automatisch gegenereerd. Voor chats met online modellen, is de titel gebaseerd op het gebruikte model en de eerste twee uitgewisselde berichten. Voor conversaties met een lokaal model is de titelgeneratie altijd actief en kan dit leiden tot verhoogd tokengebruik."
+            },
+            "enableLinksInChatMessages": {
+                "label": "Links In Chatberichten Inschakelen",
+                "description": "Schakel links in chatberichten in of uit. Het uitschakelen hiervan voorkomt dat links klikbaar zijn. We raden aan dit om veiligheidsredenen uit te schakelen."
+            },
+            "networkProxyConfiguration": {
+                "label": "Netwerk Proxy Configuratie",
+                "proxyAddress": {
+                    "label": "Proxy Adres",
+                    "description": "Specificeer proxy-adres voor het routeren van netwerkverkeer. Als de configuratie is gereset, moet u mogelijk Msty afsluiten en opnieuw starten zodat de wijzigingen volledig van kracht worden."
+                },
+                "reset": {
+                    "success": "Proxy configuratie gereset"
+                },
+                "save": {
+                    "success": "Proxy geconfigureerd"
+                }
+            },
+            "theme": {
+                "label": "Thema",
+                "appearance": {
+                    "label": "Uiterlijk",
+                    "light": "Licht",
+                    "dark": "Donker",
+                    "system": "Systeem"
+                },
+                "accentColor": {
+                    "label": "Accentkleur"
+                },
+                "fontStyle": {
+                    "label": "Lettertypestijl"
+                },
+                "codeTheme": {
+                    "label": "Code Thema"
+                },
+                "fontSize": "Lettergrootte",
+                "themeTray": "Thema Bak",
+                "toggleThemeTray": "Wissel Thema Bak In/Uit"
+            },
+            "applicationInfo": {
+                "label": "Applicatie Informatie",
+                "appVersion": {
+                    "label": "Applicatieversie",
+                    "description": {
+                        "manual": "De laatste updates worden regelmatig gecontroleerd en u wordt op de hoogte gesteld wanneer een nieuwe update beschikbaar is. U kunt handmatig controleren op updates.",
+                        "automatic": "De laatste updates worden regelmatig gecontroleerd en automatisch geïnstalleerd. U kunt ook handmatig controleren op updates."
+                    },
+                    "viewChangelog": "Bekijk Wijzigingen",
+                    "enableAutoUpdates": "Automatische Updates Inschakelen"
+                },
+                "modelsInfo": {
+                    "label": "Model Informatie",
+                    "description": "Werk uw lokale modelmetadata bij. Deze informatie bevat details over elk model, maar niet de modelbestanden zelf. Dit geldt zowel voor lokaal opgeslagen als online modellen.",
+                    "fetchLatestModelsInfo": {
+                        "label": "Haal Laatste Modelinformatie Op"
+                    }
+                },
+                "appSettings": {
+                    "label": "Applicatie Instellingen",
+                    "description": "Het resetten van de app-instellingen naar hun standaard kan helpen om mogelijke problemen op te lossen. Dit herstelt de standaard gebruikersvoorkeuren, zoals uiterlijk en modellenpad, maar verwijdert geen gegevens, inclusief chats of gedownloade/geïmporteerde modellen.",
+                    "resetAppSettings": {
+                        "label": "Reset App Instellingen",
+                        "success": "App-instellingen zijn gereset"
+                    }
+                },
+                "dataPaths": {
+                    "label": "Gegevens Paden",
+                    "description": "Alle gegevens, inclusief modellen, gesprekken, instellingen en logboeken, worden lokaal op uw apparaat opgeslagen. Wijzig de inhoud van deze mappen alleen als u vertrouwd bent met de bestandstructuur van de applicatie.",
+                    "activeWorkspace": "Actieve Werkruimte"
+                },
+                "helpAndDiscussions": {
+                    "label": "Help & Discussies",
+                    "description": "Verbind met onze gemeenschap op Discord om ondersteuning te krijgen, uw feedback te delen en op de hoogte te blijven.",
+                    "sayHi": "Zeg Hallo!",
+                    "viewDocs": "Bekijk Documenten"
+                }
+            }
+        },
+        "localAI": {
+            "manageLocalAIModels": "Beheer Lokale AI Modellen",
+            "localAIService": {
+                "label": "Lokale AI Service",
+                "saveAndRestartService": "Opslaan en Service Herstarten",
+                "restartingService": "Herstarten Lokale AI Service",
+                "modelsDirectory": {
+                    "label": "Modellen Map",
+                    "description": "Map voor het opslaan van lokale LLM's.",
+                    "editModelsPath": {
+                        "label": "Bewerk Modellen Pad",
+                        "description": "Stel uw gewenste locatie in voor het downloaden van de modellen.",
+                        "willRestartLocalAIWarning": " Opmerking: Het wijzigen van het modellenpad zal de Lokale AI-service herstarten om de wijzigingen van kracht te laten worden.",
+                        "selectModelsPath": "Selecteer Modellen Pad",
+                        "success": "Modellen pad opgeslagen"
+                    }
+                },
+                "serviceHealth": {
+                    "label": "Service Gezondheid",
+                    "description": "Huidige status van de Lokale AI-service. Als u problemen ondervindt met Lokale AI, probeer dan de service te herstarten.",
+                    "healthStatus": {
+                        "starting": "Starten",
+                        "running": "Lopend",
+                        "stopped": "Gestopt",
+                        "unknown": "Onbekend"
+                    },
+                    "startService": "Start Service",
+                    "restartService": "Herstart Service",
+                    "stopService": "Stop Service"
+                },
+                "serviceEndpoint": {
+                    "label": "Service Eindpunt",
+                    "description": {
+                        "base": "Het adres van de Lokale AI-service om van andere applicaties verbinding mee te maken.",
+                        "serviceIsNotRunning": "Zodra de service draait, wordt het adres hier weergegeven.",
+                        "serviceIsAvailableOnNetwork": "Omdat de service beschikbaar is op het netwerk, kunt u er ook verbinding mee maken via de Netwerk Service URL van andere apparaten."
+                    },
+                    "localURL": "Lokale URL",
+                    "copyLocalURL": "Kopieer Service Lokale URL naar klembord",
+                    "networkURL": "Netwerk URL",
+                    "copyNetworkURL": "Kopieer Service Netwerk URL naar klembord",
+                    "editPortNumber": {
+                        "label": "Bewerk Poortnummer",
+                        "success": "Lokale AI Service poortnummer opgeslagen",
+                        "failure": "Kon Lokale AI Service poortnummer niet opslaan"
+                    }
+                },
+                "serviceVersion": {
+                    "label": "Service Versie",
+                    "description": {
+                        "base": "De versie van de Lokale AI-service.",
+                        "mac": "U kunt de versie controleren en bijwerken naar de nieuwste versie of de service volledig verwijderen."
+                    },
+                    "startServiceToCheckVersion": "Start de service om de versie te controleren."
+                },
+                "updateService": {
+                    "success": "Lokale AI Service is bijgewerkt naar de nieuwste versie",
+                    "failure": "Kon Lokale AI Service niet bijwerken naar de nieuwste versie"
+                },
+                "uninstallService": {
+                    "label": "Lokale AI Service Verwijderen?",
+                    "description": "Uw modellen worden NIET verwijderd en blijven waar ze zijn. Toekomstige chats met de gedownloade modellen worden uitgeschakeld, tenzij u de service opnieuw installeert."
+                }
+            },
+            "serviceConfigurations": {
+                "label": "Service Configuraties",
+                "description": "Deze configuraties worden toegepast op de Lokale AI-service bij het starten. De Lokale AI-service zal automatisch herstarten nadat u een van deze instellingen hebt gewijzigd en opgeslagen.",
+                "configurePortNumber": {
+                    "label": "Configureer Poortnummer",
+                    "description": "Poortnummer waarop de Lokale AI-service draait. Laat het leeg om de standaardpoort te gebruiken."
+                },
+                "maximumParallelChats": {
+                    "label": "Maximale Parallelle Chats",
+                    "description": "Maximaal aantal gelijktijdige chatsessies (bij gebruik van split-modus)."
+                },
+                "maximumLoadedModels": {
+                    "label": "Maximaal Gegeven Modellen",
+                    "description": "Maximaal aantal LLM's dat gelijktijdig wordt geladen. Het in geheugen houden van meer LLM's zorgt voor snellere initiële antwoorden, maar verbruikt extra systeembronnen."
+                },
+                "enableNetworkAccess": {
+                    "label": "Netwerktoegang Inschakelen",
+                    "description": "Sta andere apparaten op uw netwerk toe om deze Lokale AI-service via het IP-adres van dit apparaat toegankelijk te maken."
+                },
+                "allowedNetworkOrigins": {
+                    "label": "Toegestane Netwerk Oorsprongen",
+                    "description": "Lijst toegestane netwerk oorsprongen hier (komma-gescheiden). Elke invoer moet beginnen met http:// of https://. Gebruik * om alle oorsprongen toe te staan."
+                },
+                "captureServiceLogs": {
+                    "label": "Capture Service Logboeken",
+                    "description": "Vang service logboeken voor debuggingdoeleinden. We raden aan dit alleen in te schakelen wanneer dit nodig is."
+                },
+                "advancedConfiguration": {
+                    "description": "Voer geldige JSON in om omgevingsvariabelen voor de Lokale AI-service in te stellen."
+                },
+                "save": {
+                    "success": "Service configuraties opgeslagen",
+                    "failure": "Kon service configuraties niet opslaan"
+                },
+                "reset": {
+                    "success": "Service configuraties zijn teruggezet naar oorspronkelijke waarden",
+                    "failure": "Kon service configuraties niet resetten"
+                }
+            },
+            "chatModelConfiguration": {
+                "label": "Chat Model Configuratie",
+                "description": "Deze instellingen zijn van toepassing op alle geïnstalleerde modellen tijdens chatsessies.",
+                "modelKeepAliveTimeout": {
+                    "label": "Model Keep-Alive Timeout",
+                    "description": "Tijd (in minuten) om een model in geheugen te houden na gebruik."
+                },
+                "advancedConfiguration": {
+                    "description": "Voer geldige JSON in om extra parameters aan modellen door te geven tijdens chatsessies."
+                },
+                "save": {
+                    "success": "Configuratie opgeslagen en zal tijdens het chatten worden toegepast",
+                    "failure": "Kon modelconfiguratie niet opslaan"
+                },
+                "reset": {
+                    "success": "Chatmodelconfiguratie teruggezet naar oorspronkelijke waarden",
+                    "failure": "Kon chatmodelconfiguratie niet resetten"
+                }
+            }
+        },
+        "remoteModelProviders": {
+            "noModels": {
+                "label": "Nog Geen AI Modelleveranciers Toegevoegd",
+                "description": "Begin met het toevoegen van een nieuwe leverancier zoals Open AI, Mistral, Google Gemini, Perplexity, Open AI-compatibele eindpunten, remote Ollama, remote Msty, enz."
+            },
+            "selectModels": "Selecteer Modellen",
+            "filterAvailableModels": "Zoek Modellen",
+            "description": {
+                "whereToGetKey": "U kunt de sleutel op de website van uw API-provider verkrijgen.",
+                "whereItsStored": "Standaard slaan we uw API-sleutels veilig en lokaal op in de keychain van uw besturingssysteem. U kunt om uw referenties worden gevraagd bij het opslaan en ophalen van de sleutel.",
+                "linuxKeyringConfiguration": "Er is een bekend probleem op Linux waarbij, als u uw keyring verkeerd hebt geconfigureerd, u mogelijk uw API-sleutel niet kunt opslaan. Zorg ervoor dat uw keyring correct is geconfigureerd. U kunt ook proberen de sleutel niet in de keyring, maar in de database van de app op te slaan. Dit is minder veilig, maar kan werken.",
+                "keyHintInfo": "{keyHint} is slechts een hint. De werkelijke sleutel wordt veilig opgeslagen in de keychain van uw besturingssysteem, tenzij u ervoor kiest om geen gebruik te maken van keychain. Als u de sleutel wilt bijwerken, geef dan gewoon een nieuwe sleutel op en klik op de knop Bijwerken.",
+                "ifOllamaOrMstyRemote": "Om automatisch modellen op te vragen, moet u de API-sleutel opnieuw opgeven."
+            },
+            "addItem": {
+                "success": "Modelprovider {providerName} toegevoegd"
+            },
+            "updateItem": {
+                "success": "Modelprovider {providerName} bijgewerkt"
+            },
+            "deleteItem": {
+                "label": "Modelprovider {providerName} Verwijderen?",
+                "description": "Dit zal alleen de sleutel van de modelprovider en de bijbehorende modellen verwijderen. Vorige chats met modellen van deze provider worden NIET verwijderd.",
+                "success": "Modelprovider {providerName} verwijderd"
+            },
+            "namePlaceholder": "b.v., Mijn {providerName} modellen",
+            "saveInKeychain": "Sla sleutel veilig op in keychain",
+            "apiEndpoint": "API Eindpunt",
+            "serviceEndpoint": "Service Eindpunt",
+            "fetchModels": {
+                "label": "Haal Modellen Op",
+                "refetchModels": "Haal Modellen Opnieuw Op",
+                "description": "Geef een geldig eindpunt op en druk op Haal Modellen Op om beschikbare modellen te verkrijgen.",
+                "noModelsAvailable": "Geen modellen beschikbaar",
+                "error": "Kon beschikbare modellen niet ophalen. Is het service-eindpunt correct?",
+                "info": "Probeer beschikbare modellen op te halen bij {endpoint}"
+            },
+            "openAICompatibleUrlInfo": "Zorg ervoor dat http:// of https:// is opgenomen",
+            "customModels": {
+                "label": "Aangepast Model | Aangepaste Modellen"
+            },
+            "targetURI": "Doel URI",
+            "uriOptions": "URI Opties",
+            "instanceName": "Instantie Naam",
+            "deploymentName": "Implementatie Naam"
+        },
+        "defaultPrompts": {
+            "label": "Standaard Prompts",
+            "placeholder": "Selecteer een prompt-type...",
+            "defaultModelPrompt": {
+                "label": "Standaard Model Prompt",
+                "placeholder": "Klik om de globale standaard model prompt in te stellen..."
+            },
+            "autoTitleGenerationPrompt": {
+                "label": "Auto Titel Generatie Prompt",
+                "placeholder": "Genereer een titel..."
+            },
+            "realTimeDataSearchQueryPrompt": {
+                "label": "Reële Tijd Gegevens Zoekopdracht Synthesize Prompt",
+                "placeholder": "Synthesize Reële Tijd Gegevens zoekopdracht..."
+            },
+            "updatePrompt": {
+                "success": "{promptType} bijgewerkt"
+            }
+        },
+        "licenseAndAccess": {
+            "label": "Licentie en Toegang",
+            "enterLicenseKey": "Voer uw Licentiesleutel in",
+            "aurum": {
+                "label": "Aurum Licentie",
+                "description": "Ontgrendel alle premium functies van Msty door uw Aurum Licentie te activeren.",
+                "purchaseLicense": "Koop Licentie",
+                "activate": {
+                    "label": "Activeer Aurum Licentie",
+                    "success": "Aurum Licentie geactiveerd",
+                    "failure": "Kon uw Aurum Licentie niet activeren. Probeer het opnieuw. {errorMessage}"
+                },
+                "activated": {
+                    "description": "Bedankt voor uw steun aan Msty! Uw Aurum Licentie is actief en u heeft alle premium functies van Msty ontgrendeld."
+                }
+            },
+            "aurumLifetime": {
+                "label": "Aurum Levenslange Toegang Club",
+                "description": "Word lid van de gouden cirkel van supporters met een eenmalige aankoop van Aurum Levenslange Toegang en ontgrendel alle premium functies van Msty voor altijd.",
+                "notASubscription": "Opmerking: Dit is een eenmalige aankoop en geen abonnement. Upgrade van Aurum Licentie naar Aurum Levenslange Toegang is niet mogelijk.",
+                "join": "Word Lid van de Club",
+                "activate": {
+                    "label": "Activeer Aurum Levenslange Licentie",
+                    "success": "Bedankt! U bent nu een ster van de Aurum Levenslange Club!",
+                    "failure": "Kon uw Aurum Levenslange Licentie niet activeren. Probeer het opnieuw. {errorMessage}"
+                },
+                "activated": {
+                    "label": "Aurum Levenslange Toegang 🌟",
+                    "description": "U bent een ster van de Aurum Levenslange Toegang Club! Bedankt voor uw steun en welkom in de club!",
+                    "additionalNote": "Uw steun heeft ons in staat gesteld om ons te concentreren op het toevoegen van nieuwe functies en het verbeteren van de app zonder externe invloeden. 🙏"
+                }
+            }
+        }
+    },
+    "searchModels": {
+        "label": "Zoek modellen...",
+        "noModelsFound": "Geen modellen gevonden"
+    },
+    "localAI": {
+        "label": "Lokale AI",
+        "browseModels": "Blader & Download Online Modellen",
+        "startService": {
+            "failure": "Kon Lokale AI Service niet starten. Probeer het opnieuw."
+        }
+    },
+    "ggufModel": {
+        "label": "GGUF Model | GGUF Modellen",
+        "import": {
+            "confirmation": "Hoe wilt u het GGUF model(en) importeren?",
+            "link": {
+                "description": "Kies {action} om een symlink naar het GGUF model(en) in de lokale AI modellen map te maken. Dit bespaart schijfruimte, maar het model(en) zijn onbruikbaar als het originele bestand wordt verwijderd of verplaatst."
+            },
+            "copy": {
+                "description": "Kies {action} om een kopie van het GGUF model(en) in de lokale AI modellen map te maken. Dit verbruikt extra schijfruimte, maar het model(en) worden NIET verwijderd als het originele bestand wordt verwijderd."
+            }
+        }
+    },
+    "remoteModelProviders": {
+        "label": "Remote Model Provider | Remote Model Providers"
+    },
+    "vaporMode": {
+        "label": "Vapor Modus",
+        "description": "Gesprekken worden niet opgeslagen in uw geschiedenis en verdwijnen wanneer u het uitschakelt",
+        "isEnabledDescription": "Vapor Modus is Ingeschakeld"
+    },
+    "keyboardAndMouse": {
+        "keyPlusClick": "Toets + Klik",
+        "clickToEdit": "Klik om te bewerken",
+        "chatSelection": {
+            "adjacent": "Selecteer aangrenzende gesprekken in een map",
+            "nonAdjacent": "Selecteer willekeurige niet-aangrenzende gesprekken"
+        },
+        "skipConfirmationDialog": "Bevestigingsdialoog voor verschillende acties over slaan",
+        "shortcuts": {
+            "usefulShortcuts": "Nuttige Sneltoetsen",
+            "copyLastAIMessage": "Kopieer Laatste AI Bericht",
+            "regenerateLastAIMessage": "Genereer Laatste AI Bericht Opnieuw",
+            "editLastUserMessage": "Bewerken Laatste Gebruikersbericht",
+            "editLastAIMessage": "Bewerken Laatste AI Bericht",
+            "navigateBetweenMessages": "Navigeer Tussen Berichten"
+        },
+        "selection": "Selectie | Selecties",
+        "dropHere": "Laat hier ergens vallen"
+    },
+    "aurumPerk": {
+        "label": "Aurum Voordeel",
+        "description": "Deze functie is alleen beschikbaar voor onze Aurum licentiehouders.",
+        "supportUs": "Overweeg ons werk te steunen door een licentie aan te schaffen."
+    },
+    "themeTray": "Thema Bak",
+    "chat": "Chat | Chats",
+    "title": "Titel",
+    "contextShield": "Context Bescherming",
+    "regenerate": "Genereer {item} Opnieuw",
+    "collapse": "Vouw {item} In",
+    "expand": "Vouw {item} Uit",
+    "sidebar": "Zijbalk",
+    "folder": {
+        "label": "Map | Mappen",
+        "deleteItem": {
+            "label": "Verwijder Map {name}",
+            "confirmation": "Verwijder Map {name}?"
+        }
+    },
+    "allFolders": "Alle Mappen",
+    "allConversations": "Alle Gesprekken",
+    "bookmark": "Bladwijzer | Bladwijzers",
+    "copyToClipboard": "Kopieer {item} Naar Klembord",
+    "fuzzySearch": "Vage Zoekopdracht",
+    "matchCase": "Hoofdlettergevoelig",
+    "item": "Item | Items",
+    "view": "Bekijk {item}",
+    "message": "Bericht | Berichten",
+    "itemOptions": " {item} Opties",
+    "itemName": "{item} Naam",
+    "modelInstructions": "Model Instructies",
+    "applyToThisItem": "Toepassen op dit {item}",
+    "activateItem": {
+        "label": "Activeer {item}",
+        "success": "{item} geactiveerd",
+        "failure": "Kon {item} niet activeren"
+    },
+    "saveChanges": "Wijzigingen Opslaan",
+    "saveItem": {
+        "label": "Opslaan {item}",
+        "as": "Opslaan {item} Als",
+        "asDefaultFor": "Opslaan als standaard voor {item}",
+        "success": "{item} opgeslagen",
+        "failure": "Kon {item} niet opslaan"
+    },
+    "resetItem": {
+        "label": "Reset {item}",
+        "success": "{item} gereset",
+        "failure": "Kon {item} niet resetten"
+    },
+    "uninstallItem": {
+        "label": "Verwijder {item}",
+        "confirmation": "Verwijder {item}?",
+        "success": "{item} verwijderd",
+        "failure": "Kon {item} niet verwijderen"
+    },
+    "addItem": {
+        "label": "Voeg {item} Toe",
+        "success": "{item} toegevoegd",
+        "failure": "Kon {item} niet toevoegen"
+    },
+    "moveItem": {
+        "label": "Verplaats {item}",
+        "success": "{item} verplaatst",
+        "failure": "Kon {item} niet verplaatsen"
+    },
+    "bookmarkItem": {
+        "label": "Bekijk {item}",
+        "success": "{item} boek gemarkeerd",
+        "failure": "Kon {item} niet boek markeren"
+    },
+    "removeItem": {
+        "label": "Verwijder {item}",
+        "success": "{item} verwijderd",
+        "failure": "Kon {item} niet verwijderen"
+    },
+    "removeItemFrom": {
+        "success": "{item} verwijderd van {source}",
+        "failure": "Kon {item} niet verwijderen van {source}"
+    },
+    "clearAndSave": "Leegmaken en Opslaan",
+    "clearItem": {
+        "label": "Maak {item} Leeg"
+    },
+    "hideItem": {
+        "label": "Verberg {item}"
+    },
+    "deleteItem": {
+        "label": "Verwijder {item}",
+        "confirmation": "Verwijder {item}?",
+        "success": "{item} verwijderd",
+        "failure": "Kon {item} niet verwijderen"
+    },
+    "cloneItem": {
+        "label": "Kloon {item}",
+        "success": "{item} gekloond",
+        "failure": "Kon {item} niet klonen"
+    },
+    "createItem": {
+        "label": "Maak {item} Aan",
+        "success": "{item} aangemaakt",
+        "failure": "Kon {item} niet aanmaken"
+    },
+    "updateItem": {
+        "label": "Bijwerken {item}",
+        "confirmation": "Bijwerken {item}?",
+        "success": "{item} bijgewerkt",
+        "failure": "Kon {item} niet bijwerken"
+    },
+    "mergeItem": {
+        "label": "Samenvoegen {item}",
+        "success": "{item} samengevoegd",
+        "failure": "Kon {item} niet samenvoegen"
+    },
+    "copyItem": {
+        "label": "Kopieer {item}",
+        "createNew": "Maak Nieuwe Kopie",
+        "success": "{item} gekopieerd",
+        "failure": "Kon {item} niet kopiëren"
+    },
+    "replaceItem": {
+        "label": "Vervang {item}",
+        "success": "{item} vervangen",
+        "failure": "Kon {item} niet vervangen"
+    },
+    "linkItem": {
+        "label": "Koppel {item}",
+        "success": "{item} gekoppeld",
+        "failure": "Kon {item} niet koppelen"
+    },
+    "generateItem": {
+        "label": "Genereer {item}",
+        "success": "{item} gegenereerd",
+        "failure": "Kon {item} niet genereren"
+    },
+    "importItem": {
+        "label": "Importeer {item}",
+        "success": "{item} geïmporteerd",
+        "failure": "Kon {item} niet importeren"
+    },
+    "bookmarkedMessagesAndChats": {
+        "label": "Boekgemarkeerde Berichten en Chats",
+        "messages": {
+            "description": "Uw boekgemarkeerde berichten verschijnen hier. Begin door op het bladwijzerpictogram te klikken in de opties van het chatbericht.",
+            "deletedMessageNavigationFailure": "Kon niet navigeren naar bericht. Het bericht was verwijderd."
+        },
+        "chats": {
+            "description": "Uw boekgemarkeerde chats verschijnen hier. Begin door op de boekmarkeerchatoptie te klikken vanuit de gespreksopties."
+        }
+    },
+    "splitChat": {
+        "label": "Split Chat | Gesplitste Chats",
+        "single": "Enkele Gesplitste Chat"
+    },
+    "splitPreset": {
+        "label": "Split Voorinstelling | Gesplitste Voorinstellingen",
+        "deleteItem": {
+            "label": "Verwijder gesplitste voorinstelling {item}?",
+            "description": "Dit verwijdert de gesplitste voorinstelling en zijn configuratie.",
+            "success": "Gesplitste voorinstelling {item} verwijderd"
+        },
+        "saveLayoutAs": "Opslaan als Gesplitste Lay-out"
+    },
+    "showAllItem": "Toon Alle {item}",
+    "dockItem": "Dock {item}",
+    "undockAllItem": "Dock Alles {item} los",
+    "switchToItem": {
+        "label": "Schakel naar {item}"
+    },
+    "conversation": {
+        "label": "Gesprek | Gesprekken",
+        "title": {
+            "label": "Gespreks titel",
+            "edit": "Bewerk Gespreks Titel"
+        },
+        "startChattingWithModel": "Begin te chatten met {modelName}",
+        "noConversationsFound": "Geen gesprekken gevonden",
+        "noChatModelSelected": "Geen chatmodel geselecteerd",
+        "folder": {
+            "startNewConversation": "Begin een nieuw gesprek in {folderName}",
+            "delete": {
+                "description": "Dit verwijdert alle bijbehorende gesprekken en hun chats en berichten."
+            },
+            "deleteAllConversations": {
+                "description": "Dit verwijdert alle gesprekken in {folderName}."
+            }
+        },
+        "delete": {
+            "description": "Dit verwijdert ook de bijbehorende chatberichten."
+        },
+        "merge": {
+            "description": "Dit zal {itemCount} gesprekken samenvoegen tot één gesprek met meerdere splits."
+        },
+        "flattenItem": "Vlak {item} Af",
+        "cloneAndFlatten": "Kloon en Vlak Af",
+        "inputBox": {
+            "placeholder": {
+                "focused": "Typ uw bericht hier",
+                "unfocused": "Druk / om hier te focussen en te beginnen met typen"
+            }
+        },
+        "shareWithSyncedSplits": "Deel met Gesynchroniseerde Splits",
+        "autoGenerateTitle": {
+            "label": "Auto-genereer titel met {model}",
+            "selectAModel": "Auto-genereer titel door een model te selecteren",
+            "selectDifferentModel": "{keyCombo} + Klik om een ander model te selecteren",
+            "failure": "Kon de gespreks titel niet automatisch genereren"
+        },
+        "flowchat": {
+            "label": "Flowchat",
+            "description": "Klik om een visuele kaart van uw gesprekken te zien"
+        }
+    },
+    "setupItem": {
+        "label": "Instellen {item}",
+        "success": "{item} installatie voltooid",
+        "failure": "Kon {item} niet instellen"
+    },
+    "downloadItem": {
+        "label": "Download {item}",
+        "success": "{item} gedownload",
+        "failure": "Kon {item} niet downloaden"
+    },
+    "continue": "Doorgaan",
+    "onboarding": {
+        "title": "Welkom bij Msty!",
+        "subTitle": "Hoe zou u graag willen beginnen?",
+        "setupLocalAI": {
+            "pros": {
+                "item1": "Gebruik modellen zoals Meta Llama3, Microsoft Phi3, IBM Granite, Google Gemma, enz.",
+                "item2": "Chat offline",
+                "item3": "Modellen zijn gratis te gebruiken en te downloaden",
+                "item4": "Installeer gespecialiseerde modellen"
+            },
+            "cons": {
+                "item1": "Heeft extra opslag en geheugen nodig"
+            }
+        },
+        "addRemoteModelsProvider": {
+            "pros": {
+                "item1": "Gebruik OpenAI GPT, Azure, Claude Sonnet, Google Gemini, Perplexity, Remote Ollama, enz.",
+                "item2": "Begin snel",
+                "item3": "Geen download vereist"
+            },
+            "cons": {
+                "item1": "Vereist internetverbinding om te chatten",
+                "item2": "Leverancierkosten kunnen van toepassing zijn"
+            }
+        },
+        "downloadModel": {
+            "description": "Download {modelName} een {modelSize} model voor Lokale AI. Dit is alleen om u op weg te helpen, u kunt later altijd meer modellen downloaden. Het model wordt alleen gedownload als het nog niet lokaal beschikbaar is."
+        },
+        "inProgress": {
+            "description": "Dit proces duurt meestal een paar minuten, afhankelijk van uw internetsnelheid. Als het langer dan 10-15 minuten duurt, probeer dan de app opnieuw op te starten. Als het probleem aanhoudt, neem dan contact met ons op."
+        },
+        "onboardWithOllama": {
+            "label": "Heeft u Ollama?",
+            "description": "Begin snel met het gebruik van Ollama-modellen vanuit {folderPath}"
+        },
+        "success": "Dat is het! U kunt nu beginnen met chatten."
+    },
+    "locateInFolder": {
+        "mac": "Toon in Finder",
+        "windows": "Toon in Verkenner",
+        "linux": "Zoek in Bestandsbeheer"
+    },
+    "showItem": {
+        "label": "Toon {item}"
+    },
+    "createOrImportItem": {
+        "label": "Maak of Importeer {item}"
+    },
+    "apiKey": "API Sleutel | API Sleutels",
+    "settingsAndConfigs": "Instellingen & Configuraties",
+    "selectItemLocation": "Selecteer {item} locatie",
+    "icon": "Icoon | Iconen",
+    "defaultItem": "Standaard {item}",
+    "workspace": {
+        "label": "Werkruimte | Werkruimten",
+        "defaultWorkspace": "Standaard Werkruimte",
+        "removeWorkspace": {
+            "label": "Verwijder Werkruimte",
+            "confirmation": "Verwijder Werkruimte {name}?"
+        },
+        "deleteFromDisk": {
+            "label": "Verwijder Werkruimte en Verwijder van Schijf"
+        },
+        "createAndSwitch": {
+            "label": "Maak en Wissel",
+            "title": "Blijf Georganiseerd met Werkruimten",
+            "description": "Houd Chats, Kennisstapels, Prompts, enz. apart georganiseerd door afzonderlijke werkruimten in hun eigen mappen te maken en over apparaten te delen.",
+            "whatToCopy": "Wat te kopiëren van de {workspaceName} werkruimte?",
+            "doNotCopyAnything": "Kopieer niets; begin opnieuw",
+            "apiKeysWarning": {
+                "description": "Het kopiëren van uw veilig opgeslagen API-sleutels van de {workspaceName} werkruimte zonder ze eerst bij te werken, zal niet werken als deze werkruimte op een ander apparaat wordt geïmporteerd.",
+                "updateAPIKeys": "Update API-sleutels voor de nieuwe werkruimte zodat ik ze op meerdere apparaten kan gebruiken",
+                "doNotUpdateAPIKeys": "Werk API-sleutels voor de nieuwe werkruimte niet bij. (Ik begrijp dat alle veilig opgeslagen sleutels die worden gekopieerd, niet naar behoren zullen functioneren als ik de werkruimte op een ander apparaat importeer)"
+            }
+        },
+        "switch": {
+            "success": "Overgeschakeld naar {workspaceName} werkruimte",
+            "failure": "Kon niet switchen naar {workspaceName} werkruimte",
+            "directoryMissing": "Werkruimte map {folderPath} ontbreekt"
+        },
+        "remove": {
+            "confirmation": "Verwijder Werkruimte {workspaceName}?",
+            "description": "Dit zal alleen de werkruimte verwijderen en zal GEEN gegevensmap van schijf verwijderen.",
+            "withDataFolder": {
+                "label": "Verwijder ook de gegevensmap. Deze actie kan niet ongedaan worden gemaakt.",
+                "description": "Dit verwijdert de werkruimte samen met het verwijderen van de opgeslagen gegevensmap van schijf.",
+                "warning": "Werkruimte gegevensmap op {folderPath} zal worden verwijderd"
+            }
+        }
+    },
+    "bookmarkedItem": "Boekgemarkeerd {item}",
+    "warning": "Waarschuwing",
+    "manageItem": "Beheer {item}",
+    "itemInBeta": "{item} (Bèta)",
+    "prompt": "Prompt | Prompts",
+    "quickPrompts": "Snelle Prompts",
+    "modelSelector": "Model Selector",
+    "promptLibrary": {
+        "label": "Prompt Bibliotheek"
+    },
+    "knowledgeStacks": {
+        "label": "Kennis Stack | Kennis Stacks"
+    },
+    "updateApp": {
+        "isAlreadyOnLatest": "U gebruikt al de nieuwste versie",
+        "downloadingAndInstallingLatest": "De nieuwste versie downloaden en installeren"
+    },
+    "modelsInfo": "Modelinformatie",
+    "updateModelsInfo": {
+        "success": "Modelinformatie bijgewerkt naar de nieuwste versie",
+        "failure": "Kon modelinformatie niet bijwerken naar de nieuwste versie"
+    }
+}
