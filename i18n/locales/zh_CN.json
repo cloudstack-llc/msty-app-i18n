@@ -1,0 +1,730 @@
+{
+"version": "版本",
+"moreOptions": "更多选项",
+"path": "路径",
+"discardChanges": "放弃更改",
+"checkForUpdates": "检查更新",
+"invalidJSON": "无效的JSON",
+"eg": "例如 {item}",
+"advancedConfiguration": "高级配置",
+"appData": "应用数据",
+"appLogs": "应用日志",
+"localAIServiceLogs": "本地AI服务日志",
+"cancel": "取消",
+"confirm": "确认",
+"new": "新建{item}",
+"edit": "编辑{item}",
+"select": "选择{item}",
+"fetch": "获取{item}",
+"refetch": "重新获取{item}",
+"filter": "筛选{item}",
+"search": "搜索{item}",
+"provider": "提供商",
+"learnMore": "了解更多",
+"name": "名称",
+"model": "模型 | 模型",
+"modelId": "模型ID",
+"toggle": "切换{item}",
+"loading": "正在加载{item}...",
+"license": "许可证",
+"apiVersion": "API版本",
+  "settings": {
+  "label": "设置 | 设置",
+  "description": "编辑Msty的设置",
+  "general": {
+  "label": "常规",
+  "language": {
+  "label": "语言",
+  "description": "选择Msty的首选语言。如果您想要的语言不可用，您可以通过我们的i18n仓库贡献翻译。"
+  },
+  "autoGenerateChatTitle": {
+  "label": "自动生成聊天标题",
+  "description": "启用后，将自动生成新聊天的标题。对于使用在线模型的聊天，标题将基于所使用的模型和前两条消息生成。对于使用本地模型的对话，标题生成始终处于活动状态，可能会导致token使用量增加。"
+  },
+  "enableLinksInChatMessages": {
+  "label": "在聊天消息中启用链接",
+  "description": "启用或禁用聊天消息中的链接。禁用此功能将使链接无法点击。出于安全考虑，我们建议禁用此功能。"
+  },
+  "networkProxyConfiguration": {
+  "label": "网络代理配置",
+  "proxyAddress": {
+  "label": "代理地址",
+  "description": "指定用于路由网络流量的代理地址。如果配置被重置，您可能需要退出并重新启动Msty才能使更改完全生效。"
+  },
+  "reset": {
+  "success": "代理配置已重置"
+  },
+  "save": {
+  "success": "代理已配置"
+  }
+      },
+"theme": {
+"label": "主题",
+"appearance": {
+"label": "外观",
+"light": "浅色",
+"dark": "深色",
+"system": "系统"
+},
+"accentColor": {
+"label": "强调色"
+},
+"fontStyle": {
+"label": "字体样式"
+},
+"codeTheme": {
+"label": "代码主题"
+},
+"fontSize": "字体大小",
+"themeTray": "主题托盘",
+"toggleThemeTray": "切换主题托盘"
+},
+"applicationInfo": {
+"label": "应用信息",
+"appVersion": {
+"label": "应用版本",
+"description": {
+"manual": "系统会定期检查最新更新，并在有新更新可用时通知您。您可以手动检查更新。",
+"automatic": "系统会定期检查最新更新并自动安装。您也可以手动检查更新。"
+},
+"viewChangelog": "查看更新日志",
+"enableAutoUpdates": "启用自动更新"
+},
+"modelsInfo": {
+"label": "模型信息",
+"description": "更新本地模型元数据。这些信息包括每个模型的详细信息，但不包括模型文件本身。这适用于本地存储和在线模型",
+"fetchLatestModelsInfo": {
+"label": "获取最新模型信息"
+}
+},
+"appSettings": {
+"label": "应用设置",
+"description": "将应用设置重置为默认值可以帮助解决潜在问题。这将恢复默认的用户偏好设置，如外观和模型路径，但不会删除任何数据，包括聊天或已下载/导入的模型。",
+"resetAppSettings": {
+"label": "重置应用设置",
+"success": "应用设置已重置"
+}
+        },
+"dataPaths": {
+"label": "数据路径",
+"description": "所有数据，包括模型、对话、设置和日志，都存储在您的设备本地。仅在您熟悉应用程序的文件结构时才修改这些目录的内容",
+"activeWorkspace": "活动工作区"
+},
+"helpAndDiscussions": {
+"label": "帮助与讨论",
+"description": "在Discord上与我们的社区联系以获取支持、分享反馈并保持信息更新",
+"sayHi": "打个招呼！",
+"viewDocs": "查看文档"
+}
+}
+},
+"localAI": {
+"manageLocalAIModels": "管理本地AI模型",
+"localAIService": {
+"label": "本地AI服务",
+"saveAndRestartService": "保存并重启服务",
+"restartingService": "正在重启本地AI服务",
+"modelsDirectory": {
+"label": "模型目录",
+"description": "用于存储本地LLMs的目录。",
+"editModelsPath": {
+"label": "编辑模型路径",
+"description": "设置您想要下载模型的位置。",
+"willRestartLocalAIWarning": " 注意：更改模型路径将重启本地AI服务以使更改生效。",
+"selectModelsPath": "选择模型路径",
+"success": "模型路径已保存"
+}
+        },
+"serviceHealth": {
+"label": "服务健康状况",
+"description": "当前本地AI服务状态。如果您在使用本地AI时遇到问题，请尝试重启服务。",
+"healthStatus": {
+"starting": "启动中",
+"running": "运行中",
+"stopped": "已停止",
+"unknown": "未知"
+},
+"startService": "启动服务",
+"restartService": "重启服务",
+"stopService": "停止服务"
+},
+"serviceEndpoint": {
+"label": "服务端点",
+"description": {
+"base": "用于从其他应用程序连接的本地AI服务地址。",
+"serviceIsNotRunning": "服务运行后，地址将显示在这里。",
+"serviceIsAvailableOnNetwork": "由于服务在网络上可用，您也可以从其他设备使用网络服务URL进行连接。"
+},
+"localURL": "本地URL",
+"copyLocalURL": "复制服务本地URL到剪贴板",
+"networkURL": "网络URL",
+"copyNetworkURL": "复制服务网络URL到剪贴板",
+"editPortNumber": {
+"label": "编辑端口号",
+"success": "本地AI服务端口号已保存",
+"failure": "无法保存本地AI服务端口号"
+}
+        },
+"serviceVersion": {
+"label": "服务版本",
+"description": {
+"base": "本地AI服务的版本。",
+"mac": "您可以检查并更新到最新版本或完全卸载服务。"
+},
+"startServiceToCheckVersion": "启动服务以检查版本。"
+},
+"updateService": {
+"success": "本地AI服务已更新至最新版本",
+"failure": "无法将本地AI服务更新至最新版本"
+},
+"uninstallService": {
+"label": "卸载本地AI服务？",
+"description": "您的模型不会被删除，它们会保留在原位置。除非重新安装服务，否则将禁用与已下载模型的未来聊天。"
+}
+},
+"serviceConfigurations": {
+"label": "服务配置",
+"description": "这些配置在启动本地AI服务时应用。修改并保存任何这些设置后，本地AI服务将自动重启。",
+"configurePortNumber": {
+"label": "配置端口号",
+"description": "本地AI服务将运行的端口号。留空以使用默认端口。"
+},
+"maximumParallelChats": {
+"label": "最大并行聊天数",
+"description": "最大并发聊天会话数（使用分屏模式时）。"
+},
+"maximumLoadedModels": {
+"label": "最大加载模型数",
+"description": "同时加载的LLMs的最大数量。在内存中保持更多LLMs准备就绪可以实现更快的初始响应，但会消耗额外的系统资源。"
+},
+"enableNetworkAccess": {
+  "label": "启用网络访问",
+  "description": "允许网络中的其他设备通过此设备的IP地址访问本地AI服务。"
+},
+"allowedNetworkOrigins": {
+  "label": "允许的网络来源",
+  "description": "在此处列出允许的网络来源（用逗号分隔）。每个条目必须以http://或https://开头。使用*允许所有来源。"
+},
+"captureServiceLogs": {
+  "label": "捕获服务日志",
+  "description": "捕获服务日志用于调试目的。我们建议仅在必要时启用此功能。"
+},
+"advancedConfiguration": {
+  "description": "输入有效的JSON来为本地AI服务设置环境变量。"
+},
+"save": {
+  "success": "服务配置已保存",
+  "failure": "无法保存服务配置"
+},
+"reset": {
+  "success": "服务配置已重置为原始值",
+  "failure": "无法重置服务配置"
+}
+      },
+      "chatModelConfiguration": {
+        "label": "聊天模型配置",
+        "description": "这些设置在聊天会话期间适用于所有已安装的模型。",
+        "modelKeepAliveTimeout": {
+          "label": "模型保活超时",
+          "description": "使用后在内存中保持模型加载的时间（以分钟为单位）。"
+        },
+        "advancedConfiguration": {
+          "description": "输入有效的JSON以在聊天会话期间向模型传递额外参数。"
+        },
+        "save": {
+          "success": "配置已保存并将在聊天时应用",
+          "failure": "无法保存模型配置"
+        },
+        "reset": {
+          "success": "聊天模型配置已重置为原始值",
+          "failure": "无法重置聊天模型配置"
+        }
+      }
+    },
+    "remoteModelProviders": {
+      "noModels": {
+        "label": "尚未添加AI模型提供商",
+        "description": "从添加新提供商开始，如Open AI、Mistral、Google Gemini、Perplexity、Open AI兼容端点、远程Ollama、远程Msty等。"
+      },
+      "selectModels": "选择模型",
+      "filterAvailableModels": "搜索模型",
+      "description": {
+        "whereToGetKey": "您可以从API提供商的网站获取密钥。",
+        "whereItsStored": "默认情况下，我们会在操作系统的密钥链中安全地保存您的API密钥。保存和检索密钥时可能会要求您提供凭据。",
+        "linuxKeyringConfiguration": "Linux上有一个已知问题，如果您的密钥环配置不正确，可能无法保存API密钥。请确保您的密钥环配置正确。您也可以尝试不将密钥保存在密钥环中，而是保存在应用程序的数据库中。这样做的安全性较低，但可能会有效。",
+        "keyHintInfo": "{keyHint}只是一个提示。除非您选择不使用密钥链，否则实际密钥会安全地保存在操作系统的密钥链中。如果要更新密钥，只需提供新密钥并点击更新按钮即可。",
+        "ifOllamaOrMstyRemote": "要能够自动尝试获取模型，您需要再次提供API密钥。"
+      },
+      "addItem": {
+        "success": "已添加模型提供商{providerName}"
+      },
+      "updateItem": {
+        "success": "已更新模型提供商{providerName}"
+      },
+      "deleteItem": {
+        "label": "删除模型提供商{providerName}？",
+        "description": "这只会删除模型提供商密钥和相关模型。来自该提供商的模型的以前的聊天记录将不会被删除。",
+        "success": "已删除模型提供商{providerName}"
+      },
+      "namePlaceholder": "例如：我的{providerName}模型",
+      "saveInKeychain": "在密钥链中安全保存密钥",
+      "apiEndpoint": "API端点",
+      "serviceEndpoint": "服务端点",
+      "fetchModels": {
+        "label": "获取模型",
+        "refetchModels": "重新获取模型",
+        "description": "提供有效的端点并按获取模型以检索可用模型",
+        "noModelsAvailable": "没有可用的模型",
+        "error": "无法获取可用模型。服务端点是否正确？",
+        "info": "正在尝试在{endpoint}获取可用模型"
+      },
+      "openAICompatibleUrlInfo": "确保包含http://或https://",
+      "customModels": {
+        "label": "自定义模型 | 自定义模型"
+      },
+      "targetURI": "目标URI",
+      "uriOptions": "URI选项",
+      "instanceName": "实例名称",
+      "deploymentName": "部署名称"
+    },
+    "defaultPrompts": {
+      "label": "默认提示",
+      "placeholder": "选择提示类型...",
+      "defaultModelPrompt": {
+        "label": "默认模型提示",
+        "placeholder": "点击设置全局默认模型提示..."
+      },
+      "autoTitleGenerationPrompt": {
+        "label": "自动标题生成提示",
+        "placeholder": "生成标题..."
+      },
+      "realTimeDataSearchQueryPrompt": {
+        "label": "实时数据搜索查询合成提示",
+        "placeholder": "合成实时数据搜索查询..."
+      },
+      "updatePrompt": {
+        "success": "已更新{promptType}"
+      }
+    },
+    "licenseAndAccess": {
+      "label": "许可证和访问",
+      "enterLicenseKey": "输入您的许可证密钥",
+      "aurum": {
+        "label": "Aurum许可证",
+        "description": "通过激活您的Aurum许可证解锁Msty的所有高级功能。",
+        "purchaseLicense": "购买许可证",
+        "activate": {
+          "label": "激活Aurum许可证",
+          "success": "Aurum许可证已激活",
+          "failure": "无法激活您的Aurum许可证。请重试。{errorMessage}"
+        },
+        "activated": {
+          "description": "感谢您支持Msty！您的Aurum许可证已激活，您已解锁Msty的所有高级功能。"
+        }
+      },
+      "aurumLifetime": {
+        "label": "Aurum终身访问俱乐部",
+        "description": "通过一次性购买Aurum终身访问权加入金色支持者圈子，永久解锁Msty的所有高级功能。",
+        "notASubscription": "注意：这是一次性购买，而不是订阅。无法从Aurum许可证升级到Aurum终身访问权。",
+        "join": "加入俱乐部",
+        "activate": {
+          "label": "激活Aurum终身许可证",
+          "success": "谢谢！您现在是Aurum终身俱乐部的一员！",
+          "failure": "无法激活您的Aurum终身许可证。请重试。{errorMessage}"
+        },
+        "activated": {
+          "label": "Aurum终身访问权",
+          "description": "您是Aurum终身访问俱乐部的一员！感谢您的支持，欢迎加入俱乐部！",
+          "additionalNote": "您的支持使我们能够专注于添加新功能和改进应用程序，而不受任何外部影响。"
+        }
+      }
+    }
+  },
+  "searchModels": {
+    "label": "搜索模型...",
+    "noModelsFound": "未找到模型"
+  },
+  "localAI": {
+    "label": "本地AI",
+    "browseModels": "在线浏览和下载模型",
+    "startService": {
+      "failure": "无法启动本地AI服务。请重试。"
+    }
+  },
+  "ggufModel": {
+    "label": "GGUF模型 | GGUF模型",
+    "import": {
+      "confirmation": "您想如何导入GGUF模型？",
+      "link": {
+        "description": "选择{action}在本地AI模型目录中创建GGUF模型的符号链接。这将节省磁盘空间，但如果原始文件被删除或移动，模型将无法使用。"
+      },
+      "copy": {
+        "description": "选择{action}在本地AI模型目录中创建GGUF模型的副本。这将消耗额外的磁盘空间，但如果原始文件被删除，模型不会被删除。"
+      }
+    }
+  },
+  "remoteModelProviders": {
+    "label": "远程模型提供商 | 远程模型提供商"
+  },
+  "vaporMode": {
+    "label": "临时模式",
+    "description": "对话不会保存在您的历史记录中，关闭时将消失",
+    "isEnabledDescription": "临时模式已启用"
+  },
+  "keyboardAndMouse": {
+    "keyPlusClick": "按键 + 点击",
+    "clickToEdit": "点击编辑",
+    "chatSelection": {
+      "adjacent": "选择文件夹中的相邻对话",
+      "nonAdjacent": "选择任何非相邻对话"
+    },
+    "skipConfirmationDialog": "跳过各种操作的确认对话框",
+    "shortcuts": {
+      "usefulShortcuts": "实用快捷键",
+      "copyLastAIMessage": "复制最后的AI消息",
+      "regenerateLastAIMessage": "重新生成最后的AI消息",
+      "editLastUserMessage": "编辑最后的用户消息",
+      "editLastAIMessage": "编辑最后的AI消息",
+      "navigateBetweenMessages": "在消息之间导航"
+    },
+    "selection": "选择 | 选择",
+    "dropHere": "拖放到此处"
+  },
+"aurumPerk": {
+    "label": "Aurum特权",
+    "description": "此功能仅适用于我们的Aurum许可证持有者。",
+    "supportUs": "请考虑通过购买许可证支持我们的工作。"
+  },
+  "themeTray": "主题托盘",
+  "chat": "聊天 | 聊天",
+  "title": "标题",
+  "contextShield": "上下文保护",
+  "regenerate": "重新生成{item}",
+  "collapse": "折叠{item}",
+  "expand": "展开{item}",
+  "sidebar": "侧边栏",
+  "folder": {
+    "label": "文件夹 | 文件夹",
+    "deleteItem": {
+      "label": "删除文件夹{name}",
+      "confirmation": "删除文件夹{name}？"
+    }
+  },
+  "allFolders": "所有文件夹",
+  "allConversations": "所有对话",
+  "bookmark": "书签 | 书签",
+  "copyToClipboard": "复制{item}到剪贴板",
+  "fuzzySearch": "模糊搜索",
+  "matchCase": "区分大小写",
+  "item": "项目 | 项目",
+  "view": "查看{item}",
+  "message": "消息 | 消息",
+  "itemOptions": "{item}选项",
+  "itemName": "{item}名称",
+  "modelInstructions": "模型指令",
+  "applyToThisItem": "应用到此{item}",
+  "activateItem": {
+    "label": "激活{item}",
+    "success": "{item}已激活",
+    "failure": "无法激活{item}"
+  },
+  "saveChanges": "保存更改",
+  "saveItem": {
+    "label": "保存{item}",
+    "as": "另存{item}为",
+    "asDefaultFor": "保存为{item}的默认值",
+    "success": "{item}已保存",
+    "failure": "无法保存{item}"
+  },
+  "resetItem": {
+    "label": "重置{item}",
+    "success": "{item}已重置",
+    "failure": "无法重置{item}"
+  },
+  "uninstallItem": {
+    "label": "卸载{item}",
+    "confirmation": "卸载{item}？",
+    "success": "{item}已卸载",
+    "failure": "无法卸载{item}"
+  },
+  "addItem": {
+    "label": "添加{item}",
+    "success": "{item}已添加",
+    "failure": "无法添加{item}"
+  },
+  "moveItem": {
+    "label": "移动{item}",
+    "success": "{item}已移动",
+    "failure": "无法移动{item}"
+  },
+  "bookmarkItem": {
+    "label": "添加{item}书签",
+    "success": "已为{item}添加书签",
+    "failure": "无法为{item}添加书签"
+  },
+  "removeItem": {
+    "label": "移除{item}",
+    "success": "{item}已移除",
+    "failure": "无法移除{item}"
+  },
+  "removeItemFrom": {
+    "success": "已从{source}移除{item}",
+    "failure": "无法从{source}移除{item}"
+  },
+  "clearAndSave": "清除并保存",
+  "clearItem": {
+    "label": "清除{item}"
+  },
+  "hideItem": {
+    "label": "隐藏{item}"
+  },
+  "deleteItem": {
+    "label": "删除{item}",
+    "confirmation": "删除{item}？",
+    "success": "{item}已删除",
+    "failure": "无法删除{item}"
+  },
+  "cloneItem": {
+    "label": "克隆{item}",
+    "success": "{item}已克隆",
+    "failure": "无法克隆{item}"
+  },
+  "createItem": {
+    "label": "创建{item}",
+    "success": "{item}已创建",
+    "failure": "无法创建{item}"
+  },
+  "updateItem": {
+    "label": "更新{item}",
+    "confirmation": "更新{item}？",
+    "success": "{item}已更新",
+    "failure": "无法更新{item}"
+  },
+  "mergeItem": {
+    "label": "合并{item}",
+    "success": "{item}已合并",
+    "failure": "无法合并{item}"
+  },
+  "copyItem": {
+    "label": "复制{item}",
+    "createNew": "创建新副本",
+    "success": "{item}已复制",
+    "failure": "无法复制{item}"
+  },
+  "replaceItem": {
+    "label": "替换{item}",
+    "success": "{item}已替换",
+    "failure": "无法替换{item}"
+  },
+  "linkItem": {
+    "label": "链接{item}",
+    "success": "{item}已链接",
+    "failure": "无法链接{item}"
+  },
+  "generateItem": {
+    "label": "生成{item}",
+    "success": "{item}已生成",
+    "failure": "无法生成{item}"
+  },
+  "importItem": {
+    "label": "导入{item}",
+    "success": "{item}已导入",
+    "failure": "无法导入{item}"
+  },
+  "bookmarkedMessagesAndChats": {
+    "label": "已添加书签的消息和聊天",
+    "messages": {
+      "description": "您添加书签的消息会显示在这里。点击聊天消息选项中的书签图标即可开始。",
+      "deletedMessageNavigationFailure": "无法导航到消息。该消息已被删除。"
+    },
+    "chats": {
+      "description": "您添加书签的聊天会显示在这里。从分屏聊天选项中点击添加聊天书签选项即可开始。"
+    }
+  },
+  "splitChat": {
+    "label": "分屏聊天 | 分屏聊天",
+    "single": "单个分屏聊天"
+  },
+  "splitPreset": {
+    "label": "分屏预设 | 分屏预设",
+    "deleteItem": {
+      "label": "删除分屏预设{item}？",
+      "description": "这将删除分屏预设及其配置。",
+      "success": "分屏预设{item}已删除"
+    },
+    "saveLayoutAs": "保存分屏布局为"
+  },
+  "showAllItem": "显示所有{item}",
+  "dockItem": "停靠{item}",
+  "undockAllItem": "取消停靠所有{item}",
+  "switchToItem": {
+    "label": "切换到{item}"
+  },
+  "conversation": {
+    "label": "对话 | 对话",
+    "title": {
+      "label": "对话标题",
+      "edit": "编辑对话标题"
+    },
+    "startChattingWithModel": "开始与{modelName}聊天",
+    "noConversationsFound": "未找到对话",
+    "noChatModelSelected": "未选择聊天模型",
+    "folder": {
+      "startNewConversation": "在{folderName}中开始新对话",
+      "delete": {
+        "description": "这将删除所有关联的对话及其聊天和消息。"
+      },
+      "deleteAllConversations": {
+        "description": "这将删除{folderName}内的所有对话。"
+      }
+    },
+    "delete": {
+      "description": "这也将删除关联的聊天消息。"
+    },
+    "merge": {
+      "description": "这将合并{itemCount}个对话到一个包含多个分屏的单一对话中。"
+    },
+    "flattenItem": "扁平化{item}",
+    "cloneAndFlatten": "克隆并扁平化",
+    "inputBox": {
+      "placeholder": {
+        "focused": "在此输入您的消息",
+        "unfocused": "按 / 聚焦此处并开始输入"
+      }
+    },
+    "shareWithSyncedSplits": "与同步分屏共享",
+    "autoGenerateTitle": {
+      "label": "使用{model}自动生成标题",
+      "selectAModel": "通过选择模型自动生成标题",
+      "selectDifferentModel": "{keyCombo} + 点击以选择不同的模型",
+      "failure": "无法自动生成对话标题"
+    },
+    "flowchat": {
+      "label": "流程聊天",
+      "description": "点击查看您对话的可视化地图"
+    }
+  },
+  "setupItem": {
+    "label": "设置{item}",
+    "success": "{item}设置已完成",
+    "failure": "无法设置{item}"
+  },
+  "downloadItem": {
+    "label": "下载{item}",
+    "success": "{item}已下载",
+    "failure": "无法下载{item}"
+  },
+  "continue": "继续",
+  "onboarding": {
+    "title": "欢迎使用Msty！",
+    "subTitle": "您想如何开始使用？",
+    "setupLocalAI": {
+      "pros": {
+        "item1": "使用Meta Llama3、Microsoft Phi3、IBM Granite、Google Gemma等模型",
+        "item2": "离线聊天",
+        "item3": "模型免费使用和下载",
+        "item4": "安装专业模型"
+      },
+      "cons": {
+        "item1": "需要额外的存储空间和内存"
+      }
+    },
+    "addRemoteModelsProvider": {
+      "pros": {
+        "item1": "使用OpenAI GPT、Azure、Claude Sonnet、Google Gemini、Perplexity、Remote Ollama等",
+        "item2": "快速开始使用",
+        "item3": "无需下载"
+      },
+      "cons": {
+        "item1": "聊天需要网络连接",
+        "item2": "可能产生供应商费用"
+      }
+    },
+    "downloadModel": {
+      "description": "为本地AI下载{modelName}，这是一个{modelSize}的模型。这只是帮助您开始使用，您以后随时可以下载更多模型。仅当本地没有可用模型时才会下载。"
+    },
+    "inProgress": {
+      "description": "此过程通常需要几分钟时间，具体取决于您的网络速度。如果超过10-15分钟，请重启应用程序。如果问题仍然存在，请联系我们。"
+    },
+    "onboardWithOllama": {
+      "label": "已有Ollama？",
+      "description": "使用{folderPath}中的Ollama模型快速开始"
+    },
+    "success": "完成！您现在可以开始聊天了。"
+  },
+  "locateInFolder": {
+    "mac": "在访达中显示",
+    "windows": "在文件资源管理器中显示",
+    "linux": "在文件管理器中定位"
+  },
+  "showItem": {
+    "label": "显示{item}"
+  },
+  "createOrImportItem": {
+    "label": "创建或导入{item}"
+  },
+  "apiKey": "API密钥 | API密钥",
+  "settingsAndConfigs": "设置与配置",
+  "selectItemLocation": "选择{item}位置",
+  "icon": "图标 | 图标",
+  "defaultItem": "默认{item}",
+  "workspace": {
+    "label": "工作区 | 工作区",
+    "defaultWorkspace": "默认工作区",
+    "removeWorkspace": {
+      "label": "移除工作区",
+      "confirmation": "移除工作区{name}？"
+    },
+    "deleteFromDisk": {
+      "label": "移除工作区并从磁盘删除"
+    },
+    "createAndSwitch": {
+      "label": "创建并切换",
+      "title": "使用工作区保持组织",
+      "description": "通过在各自的文件夹中创建不同的工作区，在设备间共享，让聊天、知识库、提示词等保持有序组织。",
+      "whatToCopy": "要从{workspaceName}工作区复制什么？",
+      "doNotCopyAnything": "不复制任何内容；从头开始",
+      "apiKeysWarning": {
+        "description": "如果不先更新从{workspaceName}工作区安全保存的API密钥就复制它们，在不同设备上导入此工作区时将无法使用。",
+        "updateAPIKeys": "更新新工作区的API密钥，以便我可以在多个设备上使用它们",
+        "doNotUpdateAPIKeys": "不更新新工作区的API密钥。（我理解如果我在不同设备上导入工作区，任何被复制的安全保存的密钥将无法按预期工作）"
+      }
+    },
+    "switch": {
+      "success": "已切换到{workspaceName}工作区",
+      "failure": "无法切换到{workspaceName}工作区",
+      "directoryMissing": "工作区目录{folderPath}丢失"
+    },
+    "remove": {
+      "confirmation": "移除工作区{workspaceName}？",
+      "description": "这只会移除工作区，不会从磁盘删除已保存的数据文件夹。",
+      "withDataFolder": {
+        "label": "同时删除数据文件夹。此操作无法撤消。",
+        "description": "这将移除工作区并从磁盘删除已保存的数据文件夹。",
+        "warning": "位于{folderPath}的工作区数据文件夹将被删除"
+      }
+    }
+  },
+  "bookmarkedItem": "已添加书签的{item}",
+  "warning": "警告",
+  "manageItem": "管理{item}",
+  "itemInBeta": "{item}（测试版）",
+  "prompt": "提示词 | 提示词",
+  "quickPrompts": "快速提示词",
+  "modelSelector": "模型选择器",
+  "promptLibrary": {
+    "label": "提示词库"
+  },
+  "knowledgeStacks": {
+    "label": "知识库 | 知识库"
+  },
+  "updateApp": {
+    "isAlreadyOnLatest": "您已经是最新版本",
+    "downloadingAndInstallingLatest": "正在下载并安装最新版本"
+  },
+  "modelsInfo": "模型信息",
+  "updateModelsInfo": {
+    "success": "模型信息已更新到最新版本",
+    "failure": "无法将模型信息更新到最新版本"
+  }
+}
