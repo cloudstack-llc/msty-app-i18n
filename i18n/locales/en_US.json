@@ -45,6 +45,10 @@
         "label": "Enable Links In Chat Messages",
         "description": "Enable or disable links in chat messages. Disabling this will prevent links from being clickable. We recommend disabling this for security reasons."
       },
+      "enableNewMessageRenderer": {
+        "label": "Enable New Rendering Engine (Beta)",
+        "description": "Enable the new rendering engine, which is faster and supports thinking/reasoning tags. Requires app restart."
+      },
       "networkProxyConfiguration": {
         "label": "Network Proxy Configuration",
         "proxyAddress": {
@@ -620,7 +624,7 @@
     "subTitle": "How would you like to get started?",
     "setupLocalAI": {
       "pros": {
-        "item1": "Use models like Meta Llama3, Microsoft Phi3, IBM Granite, Google Gemma, etc",
+        "item1": "Use models like DeepSeek R1, Meta Llama3.3, Microsoft Phi4, IBM Granite, Google Gemma, etc",
         "item2": "Chat offline",
         "item3": "Models are free to use and download",
         "item4": "Install specialized models"
@@ -726,5 +730,12 @@
   "updateModelsInfo": {
     "success": "Models Info updated to the latest version",
     "failure": "Could not update Models Info to the latest verion"
+  },
+  "think": "Think",
+  "seeWhatsNew": "See what's new in the latest version.",
+  "appUpdate": {
+    "latestVersionBeingDownloaded": "The latest version {version} of Msty is available and is being downloaded. Please wait for the download to complete.",
+    "latestVersionBeingInstalled": "The latest version {version} of Msty is being installed. App will restart automatically.",
+    "latestVersionReadyToBeInstalled": "The latest version {version} of Msty is available and ready to be installed. Please click the button to apply the update."
   }
 }
