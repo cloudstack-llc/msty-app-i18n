@@ -45,6 +45,10 @@
         "label": "启用对话消息中的链接",
         "description": "启用或禁用消息中的超链接。禁用此功能会防止对话中的链接被点击。出于安全原因，我们建议禁用这一功能。"
       },
+      "enableNewMessageRenderer": {
+        "label": "启用新版渲染引擎（测试版）",
+        "description": "启用新版渲染引擎，该引擎速度更快，支持思考/推理标签。需要重启应用。"
+      },
       "networkProxyConfiguration": {
         "label": "网络代理设置",
         "proxyAddress": {
@@ -431,10 +435,10 @@
   "saveChanges": "保存更改",
   "saveItem": {
     "label": "保存{item}",
-    "as": "另存 {item} 为",
-    "asDefaultFor": "保存 {item} 为默认设置",
-    "success": "{item} 保存",
-    "failure": "无法保存 {item}"
+    "as": "另存{item}为",
+    "asDefaultFor": "保存为{item}的默认设置",
+    "success": "{item}已保存",
+    "failure": "无法保存{item}"
   },
   "resetItem": {
     "label": "重置{item}",
@@ -620,7 +624,7 @@
     "subTitle": "你想如何开始？",
     "setupLocalAI": {
       "pros": {
-        "item1": "使用Meta Llama3， Microsoft Phi3, IBM Granite, Google Gemma等模型开始",
+        "item1": "使用DeepSeek R1，Meta Llama3.3， Microsoft Phi4, IBM Granite, Google Gemma等模型开始",
         "item2": "离线对话",
         "item3": "模型是免费下载和使用的",
         "item4": "下载具有专长的模型"
@@ -726,5 +730,12 @@
   "updateModelsInfo": {
     "success": "模型信息已经更新到最新版本",
     "failure": "无法更新模型信息到最新版本"
+  },
+  "think": "思考",
+  "seeWhatsNew": "查看最新版本有什么新功能",
+  "appUpdate": {
+    "latestVersionBeingDownloaded": "最新版本{version}的Msty已经可用并正在下载。请等待下载完成。",
+    "latestVersionBeingInstalled": "最新版本{version}的Msty正在安装中。应用将会在安装完成后自动重启。",
+    "latestVersionReadyToBeInstalled": "最新版本{version}的Msty已经可用并准备安装。请单击按钮以开始应用更新。"
   }
 }
