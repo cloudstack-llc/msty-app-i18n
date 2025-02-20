@@ -1,0 +1,741 @@
+{
+  "version": "Version",
+  "moreOptions": "Plus d'options",
+  "path": "Chemin",
+  "discardChanges": "Annuler les modifications",
+  "checkForUpdates": "Vérifier les mises à jour",
+  "invalidJSON": "JSON invalide",
+  "eg": "par ex. {item}",
+  "advancedConfiguration": "Configuration avancée",
+  "appData": "Données de l'application",
+  "appLogs": "Journaux de l'application",
+  "localAIServiceLogs": "Journaux du service AI local",
+  "cancel": "Annuler",
+  "confirm": "Confirmer",
+  "new": "Nouveau {item}",
+  "edit": "Modifier {item}",
+  "select": "Sélectionner {item}",
+  "fetch": "Récupérer {item}",
+  "refetch": "Re-récupérer {item}",
+  "filter": "Filtrer {item}",
+  "search": "Rechercher {item}",
+  "provider": "Fournisseur",
+  "learnMore": "En savoir plus.",
+  "name": "Nom",
+  "model": "Modèle | Modèles",
+  "modelId": "ID du modèle",
+  "toggle": "Basculer {item}",
+  "loading": "Chargement de {item}...",
+  "license": "Licence",
+  "apiVersion": "Version de l'API",
+  "settings": {
+    "label": "Paramètre | Paramètres",
+    "description": "Modifier les paramètres de Msty",
+    "general": {
+      "label": "Général",
+      "language": {
+        "label": "Langue",
+        "description": "Sélectionnez votre langue préférée pour Msty. Si votre langue souhaitée n'est pas disponible, vous pouvez contribuer aux traductions via notre dépôt i18n."
+      },
+      "autoGenerateChatTitle": {
+        "label": "Générer automatiquement le titre du chat",
+        "description": "Lorsque cette option est activée, les nouveaux titres de chat seront générés automatiquement. Pour les chats utilisant des modèles en ligne, le titre sera basé sur le modèle utilisé et les deux premiers messages échangés. Pour les conversations utilisant un modèle local, la génération de titre est toujours active et peut entraîner une utilisation accrue de tokens."
+      },
+      "enableLinksInChatMessages": {
+        "label": "Activer les liens dans les messages de chat",
+        "description": "Active ou désactive les liens dans les messages de chat. Désactiver cette option empêchera les liens d'être cliquables. Nous recommandons de désactiver cette option pour des raisons de sécurité."
+      },
+      "enableNewMessageRenderer": {
+        "label": "Activer le nouveau moteur de rendu (Bêta)",
+        "description": "Active le nouveau moteur de rendu, plus rapide et prenant en charge les balises de réflexion/raisonnement. Nécessite un redémarrage de l'application."
+      },
+      "networkProxyConfiguration": {
+        "label": "Configuration du proxy réseau",
+        "proxyAddress": {
+          "label": "Adresse du proxy",
+          "description": "Spécifiez l'adresse du proxy pour acheminer le trafic réseau. Si la configuration est réinitialisée, vous devrez peut-être quitter et redémarrer Msty pour que les modifications prennent pleinement effet."
+        },
+        "reset": {
+          "success": "Configuration du proxy réinitialisée"
+        },
+        "save": {
+          "success": "Proxy configuré"
+        }
+      },
+      "theme": {
+        "label": "Thème",
+        "appearance": {
+          "label": "Apparence",
+          "light": "Clair",
+          "dark": "Sombre",
+          "system": "Système"
+        },
+        "accentColor": {
+          "label": "Couleur d'accentuation"
+        },
+        "fontStyle": {
+          "label": "Style de police"
+        },
+        "codeTheme": {
+          "label": "Thème du code"
+        },
+        "fontSize": "Taille de la police",
+        "themeTray": "Panneau des thèmes",
+        "toggleThemeTray": "Basculer le panneau des thèmes"
+      },
+      "applicationInfo": {
+        "label": "Informations sur l'application",
+        "appVersion": {
+          "label": "Version de l'application",
+          "description": {
+            "manual": "Les dernières mises à jour sont vérifiées périodiquement et vous serez informé lorsqu'une nouvelle mise à jour est disponible. Vous pouvez vérifier manuellement les mises à jour.",
+            "automatic": "Les dernières mises à jour sont vérifiées périodiquement et installées automatiquement. Vous pouvez également vérifier manuellement les mises à jour."
+          },
+          "viewChangelog": "Voir le journal des modifications",
+          "enableAutoUpdates": "Activer les mises à jour automatiques"
+        },
+        "modelsInfo": {
+          "label": "Informations sur les modèles",
+          "description": "Mettez à jour les métadonnées de vos modèles locaux. Ces informations incluent des détails sur chaque modèle, mais pas les fichiers de modèle eux-mêmes. Cela s'applique à la fois aux modèles stockés localement et aux modèles en ligne.",
+          "fetchLatestModelsInfo": {
+            "label": "Récupérer les dernières informations sur les modèles"
+          }
+        },
+        "appSettings": {
+          "label": "Paramètres de l'application",
+          "description": "Réinitialiser les paramètres de l'application à leurs valeurs par défaut peut aider à résoudre des problèmes potentiels. Cela restaurera les préférences utilisateur par défaut, telles que l'apparence et le chemin des modèles, mais ne supprimera aucune donnée, y compris les chats ou les modèles téléchargés/importés.",
+          "resetAppSettings": {
+            "label": "Réinitialiser les paramètres de l'application",
+            "success": "Les paramètres de l'application ont été réinitialisés"
+          }
+        },
+        "dataPaths": {
+          "label": "Chemins des données",
+          "description": "Toutes les données, y compris les modèles, les conversations, les paramètres et les journaux, sont stockées localement sur votre appareil. Ne modifiez le contenu de ces répertoires que si vous êtes familier avec la structure de fichiers de l'application.",
+          "activeWorkspace": "Espace de travail actif"
+        },
+        "helpAndDiscussions": {
+          "label": "Aide & Discussions",
+          "description": "Connectez-vous avec notre communauté sur Discord pour obtenir du support, partager vos commentaires et rester informé.",
+          "sayHi": "Dites bonjour !",
+          "viewDocs": "Voir la documentation"
+        }
+      }
+    },
+    "localAI": {
+      "manageLocalAIModels": "Gérer les modèles d'IA locaux",
+      "localAIService": {
+        "label": "Service d'IA local",
+        "saveAndRestartService": "Enregistrer et redémarrer le service",
+        "restartingService": "Redémarrage du service d'IA local",
+        "modelsDirectory": {
+          "label": "Répertoire des modèles",
+          "description": "Répertoire pour stocker les modèles LLM locaux.",
+          "editModelsPath": {
+            "label": "Modifier le chemin des modèles",
+            "description": "Définissez l'emplacement souhaité pour télécharger les modèles.",
+            "willRestartLocalAIWarning": "Remarque : Changer le chemin des modèles redémarrera le service d'IA local pour que les modifications prennent effet.",
+            "selectModelsPath": "Sélectionner le chemin des modèles",
+            "success": "Chemin des modèles enregistré"
+          }
+        },
+        "serviceHealth": {
+          "label": "État du service",
+          "description": "État actuel du service d'IA local. Si vous rencontrez des problèmes avec l'IA locale, essayez de redémarrer le service.",
+          "healthStatus": {
+            "starting": "Démarrage",
+            "running": "En cours",
+            "stopped": "Arrêté",
+            "unknown": "Inconnu"
+          },
+          "startService": "Démarrer le service",
+          "restartService": "Redémarrer le service",
+          "stopService": "Arrêter le service"
+        },
+        "serviceEndpoint": {
+          "label": "Point de terminaison du service",
+          "description": {
+            "base": "L'adresse du service d'IA local pour se connecter à partir d'autres applications.",
+            "serviceIsNotRunning": "Une fois le service démarré, l'adresse sera affichée ici.",
+            "serviceIsAvailableOnNetwork": "Comme le service est disponible sur le réseau, vous pouvez également vous y connecter en utilisant l'URL du service réseau à partir d'autres appareils."
+          },
+          "localURL": "URL locale",
+          "copyLocalURL": "Copier l'URL locale du service dans le presse-papiers",
+          "networkURL": "URL réseau",
+          "copyNetworkURL": "Copier l'URL réseau du service dans le presse-papiers",
+          "editPortNumber": {
+            "label": "Modifier le numéro de port",
+            "success": "Numéro de port du service d'IA local enregistré",
+            "failure": "Impossible d'enregistrer le numéro de port du service d'IA local"
+          }
+        },
+        "serviceVersion": {
+          "label": "Version du service",
+          "description": {
+            "base": "La version du service d'IA local.",
+            "mac": "Vous pouvez vérifier et mettre à jour vers la dernière version ou désinstaller complètement le service."
+          },
+          "startServiceToCheckVersion": "Démarrez le service pour vérifier la version."
+        },
+        "updateService": {
+          "success": "Le service d'IA local a été mis à jour vers la dernière version",
+          "failure": "Échec de la mise à jour du service d'IA local vers la dernière version"
+        },
+        "uninstallService": {
+          "label": "Désinstaller le service d'IA local ?",
+          "description": "Vos modèles ne seront PAS supprimés et resteront à leur emplacement. Les futurs chats avec les modèles téléchargés seront désactivés à moins que vous ne réinstalliez le service."
+        }
+      },
+      "serviceConfigurations": {
+        "label": "Configurations du service",
+        "description": "Ces configurations sont appliquées au service d'IA local lors du démarrage. Le service d'IA local redémarrera automatiquement après avoir modifié et enregistré l'une de ces configurations.",
+        "configurePortNumber": {
+          "label": "Configurer le numéro de port",
+          "description": "Numéro de port sur lequel le service d'IA local fonctionnera. Laissez vide pour utiliser le port par défaut."
+        },
+        "maximumParallelChats": {
+          "label": "Nombre maximal de chats parallèles",
+          "description": "Nombre maximal de sessions de chat simultanées (lors de l'utilisation du mode divisé)."
+        },
+        "maximumLoadedModels": {
+          "label": "Nombre maximal de modèles chargés",
+          "description": "Nombre maximal de modèles LLM chargés simultanément. Garder plus de modèles prêts en mémoire permet des réponses initiales plus rapides, mais consomme des ressources système supplémentaires."
+        },
+        "enableNetworkAccess": {
+          "label": "Activer l'accès réseau",
+          "description": "Autoriser d'autres appareils sur votre réseau à accéder à ce service d'IA local via l'adresse IP de cet appareil."
+        },
+        "allowedNetworkOrigins": {
+          "label": "Origines réseau autorisées",
+          "description": "Listez ici les origines réseau autorisées (séparées par des virgules). Chaque entrée doit commencer par http:// ou https://. Utilisez * pour autoriser toutes les origines."
+        },
+        "captureServiceLogs": {
+          "label": "Capturer les journaux du service",
+          "description": "Capturer les journaux du service à des fins de débogage. Nous recommandons d'activer cette option uniquement lorsque nécessaire."
+        },
+        "advancedConfiguration": {
+          "description": "Entrez un JSON valide pour définir les variables d'environnement pour le service d'IA local."
+        },
+        "save": {
+          "success": "Configurations du service enregistrées",
+          "failure": "Échec de l'enregistrement des configurations du service"
+        },
+        "reset": {
+          "success": "Configurations du service réinitialisées aux valeurs d'origine",
+          "failure": "Échec de la réinitialisation des configurations du service"
+        }
+      },
+      "chatModelConfiguration": {
+        "label": "Configuration du modèle de chat",
+        "description": "Ces paramètres s'appliquent à tous les modèles installés lors des sessions de chat.",
+        "modelKeepAliveTimeout": {
+          "label": "Délai de maintien en mémoire du modèle",
+          "description": "Temps (en minutes) pour garder un modèle chargé en mémoire après utilisation."
+        },
+        "advancedConfiguration": {
+          "description": "Entrez un JSON valide pour passer des paramètres supplémentaires aux modèles lors des sessions de chat."
+        },
+        "save": {
+          "success": "Configuration enregistrée et sera appliquée pendant le chat",
+          "failure": "Échec de l'enregistrement de la configuration du modèle"
+        },
+        "reset": {
+          "success": "Configuration du modèle de chat réinitialisée aux valeurs d'origine",
+          "failure": "Échec de la réinitialisation de la configuration du modèle de chat"
+        }
+      }
+    },
+    "remoteModelProviders": {
+      "noModels": {
+        "label": "Aucun fournisseur de modèles d'IA ajouté pour le moment",
+        "description": "Commencez par ajouter un nouveau fournisseur tel que Open AI, Mistral, Google Gemini, Perplexity, des points de terminaison compatibles Open AI, Ollama distant, Msty distant, etc."
+      },
+      "selectModels": "Sélectionner des modèles",
+      "filterAvailableModels": "Rechercher des modèles",
+      "description": {
+        "whereToGetKey": "Vous pouvez obtenir la clé sur le site web de votre fournisseur d'API.",
+        "whereItsStored": "Par défaut, nous enregistrons vos clés API de manière sécurisée et locale dans le trousseau de votre système d'exploitation. Vous pourriez être invité à fournir vos identifiants lors de l'enregistrement et de la récupération de la clé.",
+        "linuxKeyringConfiguration": "Il existe un problème connu sur Linux où, si vous avez mal configuré votre trousseau, vous pourriez ne pas être en mesure d'enregistrer votre clé API. Assurez-vous que votre trousseau est correctement configuré. Vous pouvez également essayer d'enregistrer la clé non pas dans le trousseau mais dans la base de données de l'application. C'est moins sécurisé mais pourrait fonctionner.",
+        "keyHintInfo": "{keyHint} est juste un indice. La clé réelle est enregistrée de manière sécurisée dans le trousseau de votre système d'exploitation, sauf si vous choisissez de ne pas utiliser le trousseau. Si vous souhaitez mettre à jour la clé, fournissez simplement une nouvelle clé et cliquez sur le bouton Mettre à jour.",
+        "ifOllamaOrMstyRemote": "Pour pouvoir essayer de récupérer automatiquement les modèles, vous devez fournir à nouveau la clé API."
+      },
+      "addItem": {
+        "success": "Fournisseur de modèles {providerName} ajouté"
+      },
+      "updateItem": {
+        "success": "Fournisseur de modèles {providerName} mis à jour"
+      },
+      "deleteItem": {
+        "label": "Supprimer le fournisseur de modèles {providerName} ?",
+        "description": "Cela supprimera uniquement la clé du fournisseur de modèles et les modèles associés. Les chats précédents avec les modèles de ce fournisseur ne seront PAS supprimés.",
+        "success": "Fournisseur de modèles {providerName} supprimé"
+      },
+      "namePlaceholder": "par ex., Mes modèles {providerName}",
+      "saveInKeychain": "Enregistrer la clé de manière sécurisée dans le trousseau",
+      "apiEndpoint": "Point de terminaison de l'API",
+      "serviceEndpoint": "Point de terminaison du service",
+      "fetchModels": {
+        "label": "Récupérer les modèles",
+        "refetchModels": "Re-récupérer les modèles",
+        "description": "Fournissez un point de terminaison valide et appuyez sur Récupérer les modèles pour obtenir les modèles disponibles",
+        "noModelsAvailable": "Aucun modèle disponible",
+        "error": "Impossible de récupérer les modèles disponibles. Le point de terminaison du service est-il correct ?",
+        "info": "Tentative de récupération des modèles disponibles à {endpoint}"
+      },
+      "openAICompatibleUrlInfo": "Assurez-vous d'inclure http:// ou https://",
+      "customModels": {
+        "label": "Modèle personnalisé | Modèles personnalisés"
+      },
+      "targetURI": "URI cible",
+      "uriOptions": "Options d'URI",
+      "instanceName": "Nom de l'instance",
+      "deploymentName": "Nom du déploiement"
+    },
+    "defaultPrompts": {
+      "label": "Invites par défaut",
+      "placeholder": "Sélectionnez un type d'invite...",
+      "defaultModelPrompt": {
+        "label": "Invite de modèle par défaut",
+        "placeholder": "Cliquez pour définir l'invite de modèle globale par défaut..."
+      },
+      "autoTitleGenerationPrompt": {
+        "label": "Invite de génération automatique de titre",
+        "placeholder": "Générer un titre..."
+      },
+      "realTimeDataSearchQueryPrompt": {
+        "label": "Invite de synthèse de requête de recherche de données en temps réel",
+        "placeholder": "Synthétiser une requête de recherche de données en temps réel..."
+      },
+      "updatePrompt": {
+        "success": "{promptType} mis à jour"
+      }
+    },
+    "licenseAndAccess": {
+      "label": "Licence et accès",
+      "enterLicenseKey": "Entrez votre clé de licence",
+      "aurum": {
+        "label": "Licence Aurum",
+        "description": "Débloquez toutes les fonctionnalités premium de Msty en activant votre licence Aurum.",
+        "purchaseLicense": "Acheter une licence",
+        "activate": {
+          "label": "Activer la licence Aurum",
+          "success": "Licence Aurum activée",
+          "failure": "Impossible d'activer votre licence Aurum. Veuillez réessayer. {errorMessage}"
+        },
+        "activated": {
+          "description": "Merci de soutenir Msty ! Votre licence Aurum est active et vous avez débloqué toutes les fonctionnalités premium de Msty."
+        }
+      },
+      "aurumLifetime": {
+        "label": "Club d'accès à vie Aurum",
+        "description": "Rejoignez le cercle doré des supporters avec un achat unique de l'accès à vie Aurum et débloquez toutes les fonctionnalités premium de Msty pour toujours.",
+        "notASubscription": "Remarque : Il s'agit d'un achat unique et non d'un abonnement. Il n'est pas possible de passer d'une licence Aurum à un accès à vie Aurum.",
+        "join": "Rejoindre le club",
+        "activate": {
+          "label": "Activer la licence à vie Aurum",
+          "success": "Merci ! Vous êtes maintenant une étoile du club d'accès à vie Aurum !",
+          "failure": "Impossible d'activer votre licence à vie Aurum. Veuillez réessayer. {errorMessage}"
+        },
+        "activated": {
+          "label": "Accès à vie Aurum",
+          "description": "Vous êtes une étoile du club d'accès à vie Aurum ! Merci de nous soutenir et bienvenue dans le club !",
+          "additionalNote": "Votre soutien nous a permis de nous concentrer sur l'ajout de nouvelles fonctionnalités et l'amélioration de l'application sans aucune influence externe."
+        }
+      }
+    }
+  },
+  "searchModels": {
+    "label": "Rechercher des modèles...",
+    "noModelsFound": "Aucun modèle trouvé"
+  },
+  "localAI": {
+    "label": "IA locale",
+    "browseModels": "Parcourir et télécharger des modèles en ligne",
+    "startService": {
+      "failure": "Échec du démarrage du service d'IA local. Veuillez réessayer."
+    }
+  },
+  "ggufModel": {
+    "label": "Modèle GGUF | Modèles GGUF",
+    "import": {
+      "confirmation": "Comment souhaitez-vous importer le(s) modèle(s) GGUF ?",
+      "link": {
+        "description": "Choisissez {action} pour créer un lien symbolique vers le(s) modèle(s) GGUF dans le répertoire des modèles d'IA locaux. Cela économisera de l'espace disque mais le(s) modèle(s) seront inutilisables si le fichier d'origine est supprimé ou déplacé."
+      },
+      "copy": {
+        "description": "Choisissez {action} pour créer une copie du(s) modèle(s) GGUF dans le répertoire des modèles d'IA locaux. Cela consommera de l'espace disque supplémentaire mais le(s) modèle(s) ne seront PAS supprimés si le fichier d'origine est supprimé."
+      }
+    }
+  },
+  "remoteModelProviders": {
+    "label": "Fournisseur de modèles distants | Fournisseurs de modèles distants"
+  },
+  "vaporMode": {
+    "label": "Mode vapeur",
+    "description": "Les conversations ne seront pas enregistrées dans votre historique et disparaîtront lorsque vous le désactiverez",
+    "isEnabledDescription": "Le mode vapeur est activé"
+  },
+  "keyboardAndMouse": {
+    "keyPlusClick": "Touche + clic",
+    "clickToEdit": "Cliquer pour modifier",
+    "chatSelection": {
+      "adjacent": "Sélectionner des conversations adjacentes dans un dossier",
+      "nonAdjacent": "Sélectionner des conversations non adjacentes"
+    },
+    "skipConfirmationDialog": "Ignorer la boîte de dialogue de confirmation pour diverses actions",
+    "shortcuts": {
+      "usefulShortcuts": "Raccourcis utiles",
+      "copyLastAIMessage": "Copier le dernier message de l'IA",
+      "regenerateLastAIMessage": "Regénérer le dernier message de l'IA",
+      "editLastUserMessage": "Modifier le dernier message de l'utilisateur",
+      "editLastAIMessage": "Modifier le dernier message de l'IA",
+      "navigateBetweenMessages": "Naviguer entre les messages"
+    },
+    "selection": "Sélection | Sélections",
+    "dropHere": "Déposer n'importe où ici"
+  },
+  "aurumPerk": {
+    "label": "Avantage Aurum",
+    "description": "Cette fonctionnalité est uniquement disponible pour les détenteurs de licence Aurum.",
+    "supportUs": "Veuillez envisager de soutenir notre travail en achetant une licence."
+  },
+  "themeTray": "Panneau des thèmes",
+  "chat": "Chat | Chats",
+  "title": "Titre",
+  "contextShield": "Bouclier de contexte",
+  "regenerate": "Regénérer {item}",
+  "collapse": "Réduire {item}",
+  "expand": "Développer {item}",
+  "sidebar": "Barre latérale",
+  "folder": {
+    "label": "Dossier | Dossiers",
+    "deleteItem": {
+      "label": "Supprimer le dossier {name}",
+      "confirmation": "Supprimer le dossier {name} ?"
+    }
+  },
+  "allFolders": "Tous les dossiers",
+  "allConversations": "Toutes les conversations",
+  "bookmark": "Marque-page | Marque-pages",
+  "copyToClipboard": "Copier {item} dans le presse-papiers",
+  "fuzzySearch": "Recherche floue",
+  "matchCase": "Respecter la casse",
+  "item": "Élément | Éléments",
+  "view": "Voir {item}",
+  "message": "Message | Messages",
+  "itemOptions": "Options de {item}",
+  "itemName": "Nom de {item}",
+  "modelInstructions": "Instructions du modèle",
+  "applyToThisItem": "Appliquer à cet {item}",
+  "activateItem": {
+    "label": "Activer {item}",
+    "success": "{item} activé",
+    "failure": "Impossible d'activer {item}"
+  },
+  "saveChanges": "Enregistrer les modifications",
+  "saveItem": {
+    "label": "Enregistrer {item}",
+    "as": "Enregistrer {item} sous",
+    "asDefaultFor": "Enregistrer comme défaut pour {item}",
+    "success": "{item} enregistré",
+    "failure": "Impossible d'enregistrer {item}"
+  },
+  "resetItem": {
+    "label": "Réinitialiser {item}",
+    "success": "{item} réinitialisé",
+    "failure": "Impossible de réinitialiser {item}"
+  },
+  "uninstallItem": {
+    "label": "Désinstaller {item}",
+    "confirmation": "Désinstaller {item} ?",
+    "success": "{item} désinstallé",
+    "failure": "Impossible de désinstaller {item}"
+  },
+  "addItem": {
+    "label": "Ajouter {item}",
+    "success": "{item} ajouté",
+    "failure": "Impossible d'ajouter {item}"
+  },
+  "moveItem": {
+    "label": "Déplacer {item}",
+    "success": "{item} déplacé",
+    "failure": "Impossible de déplacer {item}"
+  },
+  "bookmarkItem": {
+    "label": "Marquer {item}",
+    "success": "{item} marqué",
+    "failure": "Impossible de marquer {item}"
+  },
+  "removeItem": {
+    "label": "Supprimer {item}",
+    "success": "{item} supprimé",
+    "failure": "Impossible de supprimer {item}"
+  },
+  "removeItemFrom": {
+    "success": "{item} supprimé de {source}",
+    "failure": "Impossible de supprimer {item} de {source}"
+  },
+  "clearAndSave": "Effacer et enregistrer",
+  "clearItem": {
+    "label": "Effacer {item}"
+  },
+  "hideItem": {
+    "label": "Masquer {item}"
+  },
+  "deleteItem": {
+    "label": "Supprimer {item}",
+    "confirmation": "Supprimer {item} ?",
+    "success": "{item} supprimé",
+    "failure": "Impossible de supprimer {item}"
+  },
+  "cloneItem": {
+    "label": "Cloner {item}",
+    "success": "{item} cloné",
+    "failure": "Impossible de cloner {item}"
+  },
+  "createItem": {
+    "label": "Créer {item}",
+    "success": "{item} créé",
+    "failure": "Impossible de créer {item}"
+  },
+  "updateItem": {
+    "label": "Mettre à jour {item}",
+    "confirmation": "Mettre à jour {item} ?",
+    "success": "{item} mis à jour",
+    "failure": "Impossible de mettre à jour {item}"
+  },
+  "mergeItem": {
+    "label": "Fusionner {item}",
+    "success": "{item} fusionné",
+    "failure": "Impossible de fusionner {item}"
+  },
+  "copyItem": {
+    "label": "Copier {item}",
+    "createNew": "Créer une nouvelle copie",
+    "success": "{item} copié",
+    "failure": "Impossible de copier {item}"
+  },
+  "replaceItem": {
+    "label": "Remplacer {item}",
+    "success": "{item} remplacé",
+    "failure": "Impossible de remplacer {item}"
+  },
+  "linkItem": {
+    "label": "Lier {item}",
+    "success": "{item} lié",
+    "failure": "Impossible de lier {item}"
+  },
+  "generateItem": {
+    "label": "Générer {item}",
+    "success": "{item} généré",
+    "failure": "Impossible de générer {item}"
+  },
+  "importItem": {
+    "label": "Importer {item}",
+    "success": "{item} importé",
+    "failure": "Impossible d'importer {item}"
+  },
+  "bookmarkedMessagesAndChats": {
+    "label": "Messages et chats marqués",
+    "messages": {
+      "description": "Vos messages marqués apparaissent ici. Commencez par cliquer sur l'icône de marque-page dans les options des messages de chat.",
+      "deletedMessageNavigationFailure": "Impossible de naviguer vers le message. Le message a été supprimé."
+    },
+    "chats": {
+      "description": "Vos chats marqués apparaissent ici. Commencez par cliquer sur l'option de marque-page dans les options de chat divisé."
+    }
+  },
+  "splitChat": {
+    "label": "Chat divisé | Chats divisés",
+    "single": "Chat divisé unique"
+  },
+  "splitPreset": {
+    "label": "Préréglage de division | Préréglages de division",
+    "deleteItem": {
+      "label": "Supprimer le préréglage de division {item} ?",
+      "description": "Cela supprimera le préréglage de division et sa configuration.",
+      "success": "Préréglage de division {item} supprimé"
+    },
+    "saveLayoutAs": "Enregistrer la disposition divisée sous"
+  },
+  "showAllItem": "Afficher tout {item}",
+  "dockItem": "Ancrer {item}",
+  "undockAllItem": "Détacher tout {item}",
+  "switchToItem": {
+    "label": "Basculer vers {item}"
+  },
+  "conversation": {
+    "label": "Conversation | Conversations",
+    "title": {
+      "label": "Titre de la conversation",
+      "edit": "Modifier le titre de la conversation"
+    },
+    "startChattingWithModel": "Commencer à discuter avec {modelName}",
+    "noConversationsFound": "Aucune conversation trouvée",
+    "noChatModelSelected": "Aucun modèle de chat sélectionné",
+    "folder": {
+      "startNewConversation": "Commencer une nouvelle conversation dans {folderName}",
+      "delete": {
+        "description": "Cela supprimera toutes les conversations associées ainsi que leurs chats et messages."
+      },
+      "deleteAllConversations": {
+        "description": "Cela supprimera toutes les conversations dans {folderName}."
+      }
+    },
+    "delete": {
+      "description": "Cela supprimera également les messages de chat associés."
+    },
+    "merge": {
+      "description": "Cela fusionnera {itemCount} conversations en une seule conversation avec plusieurs divisions."
+    },
+    "flattenItem": "Aplatir {item}",
+    "cloneAndFlatten": "Cloner et aplatir",
+    "inputBox": {
+      "placeholder": {
+        "focused": "Tapez votre message ici",
+        "unfocused": "Appuyez sur / pour vous concentrer ici et commencer à taper"
+      }
+    },
+    "shareWithSyncedSplits": "Partager avec des divisions synchronisées",
+    "autoGenerateTitle": {
+      "label": "Générer automatiquement le titre en utilisant {model}",
+      "selectAModel": "Générer automatiquement le titre en sélectionnant un modèle",
+      "selectDifferentModel": "{keyCombo} + Cliquer pour sélectionner un modèle différent",
+      "failure": "Impossible de générer automatiquement le titre de la conversation"
+    },
+    "flowchat": {
+      "label": "Flowchat",
+      "description": "Cliquez pour voir une carte visuelle de vos conversations"
+    }
+  },
+  "setupItem": {
+    "label": "Configurer {item}",
+    "success": "{item} configuré",
+    "failure": "Impossible de configurer {item}"
+  },
+  "downloadItem": {
+    "label": "Télécharger {item}",
+    "success": "{item} téléchargé",
+    "failure": "Impossible de télécharger {item}"
+  },
+  "continue": "Continuer",
+  "onboarding": {
+    "title": "Bienvenue dans Msty !",
+    "subTitle": "Comment souhaitez-vous commencer ?",
+    "setupLocalAI": {
+      "pros": {
+        "item1": "Utiliser des modèles comme DeepSeek R1, Meta Llama3.3, Microsoft Phi4, IBM Granite, Google Gemma, etc",
+        "item2": "Discuter hors ligne",
+        "item3": "Les modèles sont gratuits à utiliser et à télécharger",
+        "item4": "Installer des modèles spécialisés"
+      },
+      "cons": {
+        "item1": "Nécessite un espace de stockage et une mémoire supplémentaires"
+      }
+    },
+    "addRemoteModelsProvider": {
+      "pros": {
+        "item1": "Utiliser OpenAI GPT, Azure, Claude Sonnet, Google Gemini, Perplexity, Ollama distant, etc",
+        "item2": "Commencer rapidement",
+        "item3": "Aucun téléchargement requis"
+      },
+      "cons": {
+        "item1": "Nécessite une connexion Internet pour discuter",
+        "item2": "Des frais de fournisseur peuvent s'appliquer"
+      }
+    },
+    "downloadModel": {
+      "description": "Télécharger {modelName} un modèle de {modelSize} pour l'IA locale. C'est juste pour vous aider à démarrer, vous pouvez toujours télécharger plus de modèles plus tard. Le modèle est uniquement téléchargé s'il n'est pas déjà disponible localement."
+    },
+    "inProgress": {
+      "description": "Ce processus prend généralement quelques minutes selon la vitesse de votre connexion Internet. Si cela prend plus de 10-15 minutes, veuillez redémarrer l'application. Si le problème persiste, veuillez nous contacter."
+    },
+	"onboardWithOllama": {
+	  "label": "Vous avez Ollama ?",
+	  "description": "Commencez rapidement à utiliser les modèles Ollama depuis {folderPath}"
+	},
+	"success": "C'est tout ! Vous pouvez maintenant commencer à discuter."
+  },
+  "locateInFolder": {
+    "mac": "Afficher dans le Finder",
+    "windows": "Afficher dans l'Explorateur de fichiers",
+    "linux": "Localiser dans le gestionnaire de fichiers"
+  },
+  "showItem": {
+    "label": "Afficher {item}"
+  },
+  "createOrImportItem": {
+    "label": "Créer ou importer {item}"
+  },
+  "apiKey": "Clé API | Clés API",
+  "settingsAndConfigs": "Paramètres et configurations",
+  "selectItemLocation": "Sélectionner l'emplacement de {item}",
+  "icon": "Icône | Icônes",
+  "defaultItem": "Élément par défaut {item}",
+  "workspace": {
+    "label": "Espace de travail | Espaces de travail",
+    "defaultWorkspace": "Espace de travail par défaut",
+    "removeWorkspace": {
+      "label": "Supprimer l'espace de travail",
+      "confirmation": "Supprimer l'espace de travail {name} ?"
+	},
+	"deleteFromDisk": {
+      "label": "Supprimer l'espace de travail et effacer du disque"
+	},
+	"createAndSwitch": {
+      "label": "Créer et basculer",
+      "title": "Restez organisé avec les espaces de travail",
+      "description": "Gardez les discussions, les piles de connaissances, les invites, etc. organisés séparément en créant des espaces de travail distincts dans leurs propres dossiers et partagés entre les appareils.",
+      "whatToCopy": "Que copier de l'espace de travail {workspaceName} ?",
+      "doNotCopyAnything": "Ne rien copier ; commencer à partir de zéro",
+      "apiKeysWarning": {
+        "description": "Copier vos clés API sauvegardées en toute sécurité depuis l'espace de travail {workspaceName} sans les mettre à jour d'abord ne fonctionnera pas si cet espace de travail est importé sur un autre appareil.",
+        "updateAPIKeys": "Mettre à jour les clés API pour le nouvel espace de travail afin que je puisse les utiliser sur plusieurs appareils",
+        "doNotUpdateAPIKeys": "Ne pas mettre à jour les clés API pour le nouvel espace de travail. (Je comprends que toutes les clés sauvegardées en toute sécurité qui seront copiées ne fonctionneront pas comme prévu si j'importe l'espace de travail sur un appareil différent)"
+      }
+	},
+	"switch": {
+      "success": "Basculé vers l'espace de travail {workspaceName}",
+      "failure": "Impossible de basculer vers l'espace de travail {workspaceName}",
+      "directoryMissing": "Le répertoire de l'espace de travail {folderPath} est manquant"
+	},
+	"remove": {
+      "confirmation": "Supprimer l'espace de travail {workspaceName} ?",
+      "description": "Cela ne fera que supprimer l'espace de travail et ne supprimera PAS le dossier de données enregistré du disque.",
+      "withDataFolder": {
+        "label": "Supprimer également le dossier de données. Cette action ne peut pas être annulée.",
+        "description": "Cela supprimera l'espace de travail ainsi que le dossier de données enregistré du disque.",
+        "warning": "Le dossier de données de l'espace de travail à {folderPath} sera supprimé"
+      }
+	}
+  },
+  "bookmarkedItem": "Élément {item} mis en favori",
+  "warning": "Attention",
+  "manageItem": "Gérer {item}",
+  "itemInBeta": "{item} (Bêta)",
+  "prompt": "Invite | Invites",
+  "quickPrompts": "Invites rapides",
+  "modelSelector": "Sélecteur de modèle",
+  "promptLibrary": {
+	"label": "Bibliothèque d'invites"
+  },
+  "knowledgeStacks": {
+	"label": "Pile de connaissances | Piles de connaissances"
+  },
+  "updateApp": {
+	"isAlreadyOnLatest": "Vous êtes déjà sur la dernière version",
+	"downloadingAndInstallingLatest": "Téléchargement et installation de la dernière version"
+  },
+  "modelsInfo": "Infos sur les modèles",
+  "updateModelsInfo": {
+    "success": "Infos sur les modèles mises à jour vers la dernière version",
+    "failure": "Impossible de mettre à jour les infos sur les modèles vers la dernière version"
+  },
+  "think": "Penser",
+  "seeWhatsNew": "Voir les nouveautés de la dernière version.",
+  "appUpdate": {
+    "latestVersionBeingDownloaded": "La dernière version {version} de Msty est disponible et est en cours de téléchargement. Veuillez attendre la fin du téléchargement.",
+    "latestVersionBeingInstalled": "La dernière version {version} de Msty est en cours d'installation. L'application redémarrera automatiquement.",
+    "latestVersionReadyToBeInstalled": "La dernière version {version} de Msty est disponible et prête à être installée. Veuillez cliquer sur le bouton pour appliquer la mise à jour."
+  }
+}
