@@ -330,6 +330,7 @@
           "label": "Aurum Lifetime Access Club",
           "description": "Bergabunglah dengan lingkaran emas pendukung dengan pembelian satu kali Aurum Lifetime Access dan buka semua fitur premium Msty selamanya.",
           "notASubscription": "Catatan: Ini adalah pembelian satu kali dan bukan langganan. Upgrade dari Lisensi Aurum ke Aurum Lifetime Access tidak memungkinkan.",
+          "join": "Bergabung dengan Klub",
           "activate": {
             "label": "Aktifkan Lisensi Aurum Lifetime",
             "success": "Terima kasih! Anda sekarang adalah bintang dari Aurum Lifetime Club!",
