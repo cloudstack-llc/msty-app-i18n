@@ -39,11 +39,17 @@
       },
       "autoGenerateChatTitle": {
         "label": "Automatically Generate Chat Title",
-        "description": "When enabled, new chat titles will be generated automatically. For chats using online models, the title will be based on the model used and the first two messages exchanged. For conversations using a local model, title generation is always active and may result in increased token usage."
+        "description": "When enabled, new chat titles will be generated automatically."
       },
+      "localModels": "Local Models",
+      "remoteModels": "Remote Models",
       "enableLinksInChatMessages": {
         "label": "Enable Links In Chat Messages",
         "description": "Enable or disable links in chat messages. Disabling this will prevent links from being clickable. We recommend disabling this for security reasons."
+      },
+      "enableRtlSupport": {
+        "label": "Enable RTL Support",
+        "description": "Useful for languages that are read from right to left."
       },
       "enableNewMessageRenderer": {
         "label": "Enable New Rendering Engine (Beta)",
@@ -277,7 +283,8 @@
       "fetchModels": {
         "label": "Fetch Models",
         "refetchModels": "Re-fetch Models",
-        "description": "Provide a valid endpoint and press Fetch Models to retrieve available models",
+        "description": "You can fetch models once you have provided a valid endpoint",
+        "openaiCompatibleDescription": "You can fetch models once you have provided a valid endpoint and an API key, or you can get started by adding a custom model",
         "noModelsAvailable": "No models available",
         "error": "Could not fetch available models. Is the service endpoint correct?",
         "info": "Attempting to fetch available models at {endpoint}"
@@ -365,7 +372,8 @@
       "copy": {
         "description": "Choose {action} to create a copy of the GGUF model(s) in the local AI models directory. This will consume additional disk space but the model(s) will NOT be deleted if the original file is removed."
       }
-    }
+    },
+    "windowsAndLinuxWarning": "Important: If you are on Windows or Linux, you might need to run Msty as an administrator before importing the models. Otherwise, you may run into issues when chatting with the imported models later."
   },
   "remoteModelProviders": {
     "label": "Remote Model Provider | Remote Model Providers"
@@ -419,6 +427,7 @@
   "bookmark": "Bookmark | Bookmarks",
   "copyToClipboard": "Copy {item} To Clipboard",
   "fuzzySearch": "Fuzzy Search",
+  "fullTextSearch": "Full-text Search",
   "matchCase": "Match Case",
   "item": "Item | Items",
   "view": "View {item}",
@@ -606,6 +615,17 @@
     "flowchat": {
       "label": "Flowchat",
       "description": "Click to see a visual map of your conversations"
+    },
+    "search": {
+      "label": "Search Conversations",
+      "description": "Get started by searching for a keyword",
+      "foundCountItems": "Found {count} item | Found {count} items"
+    },
+    "reIndexMessages": {
+      "confirmation": {
+        "title": "Re-index Messages?",
+        "description": "This may take a while. Please do not close Msty until re-indexing is complete."
+      }
     }
   },
   "setupItem": {
@@ -737,5 +757,52 @@
     "latestVersionBeingDownloaded": "The latest version {version} of Msty is available and is being downloaded. Please wait for the download to complete.",
     "latestVersionBeingInstalled": "The latest version {version} of Msty is being installed. App will restart automatically.",
     "latestVersionReadyToBeInstalled": "The latest version {version} of Msty is available and ready to be installed. Please click the button to apply the update."
-  }
+  },
+  "copyReasoningToClipboard": "Copy reasoning text to clipboard",
+  "required": "Required",
+  "showModels": {
+    "label": "Show Models",
+    "description": "Choose whether to show models from {source} in the chat model selector."
+  },
+  "installedModels": "Installed Models",
+  "reIndexItem": {
+    "action": "Re-index {item}",
+    "failure": "Could not re-index {item}",
+    "success": "{item} re-indexed",
+    "start": "Re-indexing {item}"
+  },
+  "fullTextSearchTips": {
+    "title": "Helpful Tips",
+    "tips": {
+      "default": {
+        "description": "Search matches all words by default (e.g., {example} → matches text containing both words in any order)",
+        "example": "blue car"
+      },
+      "partial": {
+        "description": "Use {operator} for partial matches (e.g., {example})",
+        "operator": "*",
+        "example": "run* → runs, running"
+      },
+      "or": {
+        "description": "Use {operator} to match any term (e.g., {example})",
+        "operator": "OR",
+        "example": "apple OR orange"
+      },
+      "exact": {
+        "description": "Use double quotes {operator} for exact matches (e.g., {example})",
+        "operator": "\"\"",
+        "example": "\"blue car\""
+      },
+      "specialCharacters": {
+        "description": "Use {operator} to escape special characters (e.g., {example})",
+        "operator": "\"\"",
+        "example": "\"C++\", \"node.js\""
+      }
+    }
+  },
+  "splitWidth": "Split Width | Split Widths",
+  "organization": "Organization | Organizations",
+  "endpoint": "Endpoint | Endpoints",
+  "selfHosted": "Self-hosted",
+  "optional": "Optional"
 }

@@ -1,0 +1,741 @@
+{
+    "version": "Versi",
+    "moreOptions": "Opsi Lainnya",
+    "path": "Path",
+    "discardChanges": "Buang Perubahan",
+    "checkForUpdates": "Periksa Pembaruan",
+    "invalidJSON": "JSON Tidak Valid",
+    "eg": "mis. {item}",
+    "advancedConfiguration": "Konfigurasi Lanjutan",
+    "appData": "Data Aplikasi",
+    "appLogs": "Log Aplikasi",
+    "localAIServiceLogs": "Log Layanan AI Lokal",
+    "cancel": "Batal",
+    "confirm": "Konfirmasi",
+    "new": "Baru {item}",
+    "edit": "Edit {item}",
+    "select": "Pilih {item}",
+    "fetch": "Ambil {item}",
+    "refetch": "Ambil Ulang {item}",
+    "filter": "Filter {item}",
+    "search": "Cari {item}",
+    "provider": "Penyedia",
+    "learnMore": "Pelajari lebih lanjut.",
+    "name": "Nama",
+    "model": "Model | Model-model",
+    "modelId": "ID Model",
+    "toggle": "Toggel {item}",
+    "loading": "Memuat {item}...",
+    "license": "Lisensi",
+    "apiVersion": "Versi API",
+    "settings": {
+      "label": "Pengaturan | Pengaturan-pengaturan",
+      "description": "Edit Pengaturan Msty",
+      "general": {
+        "label": "Umum",
+        "language": {
+          "label": "Bahasa",
+          "description": "Pilih bahasa yang Anda inginkan untuk Msty. Jika bahasa yang diinginkan tidak tersedia, Anda dapat berkontribusi pada terjemahan melalui repositori i18n kami."
+        },
+        "autoGenerateChatTitle": {
+          "label": "Automatis Menghasilkan Judul Obrolan",
+          "description": "Jika diaktifkan, judul obrolan baru akan dihasilkan secara otomatis. Untuk obrolan yang menggunakan model online, judul akan berdasarkan model yang digunakan dan dua pesan pertama yang dipertukarkan. Untuk obrolan yang menggunakan model lokal, pembuatan judul selalu aktif dan dapat meningkatkan penggunaan token."
+        },
+        "enableLinksInChatMessages": {
+          "label": "Aktifkan Tautan Dalam Pesan Obrolan",
+          "description": "Aktifkan atau nonaktifkan tautan dalam pesan obrolan. Menonaktifkan ini akan mencegah tautan menjadi dapat diklik. Kami merekomendasikan untuk menonaktifkan ini demi alasan keamanan."
+        },
+        "enableNewMessageRenderer": {
+          "label": "Aktifkan Mesin Rendering Baru (Beta)",
+          "description": "Aktifkan mesin rendering baru, yang lebih cepat dan mendukung tag berpikir/penalaran. Memerlukan restart aplikasi."
+        },
+        "networkProxyConfiguration": {
+          "label": "Konfigurasi Proxy Jaringan",
+          "proxyAddress": {
+            "label": "Alamat Proxy",
+            "description": "Tentukan alamat proxy untuk mengarahkan lalu lintas jaringan. Jika konfigurasi direset, Anda mungkin perlu keluar dan memulai ulang Msty agar perubahan sepenuhnya berlaku."
+          },
+          "reset": {
+            "success": "Konfigurasi proxy direset"
+          },
+          "save": {
+            "success": "Proxy dikonfigurasi"
+          }
+        },
+        "theme": {
+          "label": "Tema",
+          "appearance": {
+            "label": "Tampilan",
+            "light": "Terang",
+            "dark": "Gelap",
+            "system": "Sistem"
+          },
+          "accentColor": {
+            "label": "Warna Aksen"
+          },
+          "fontStyle": {
+            "label": "Gaya Font"
+          },
+          "codeTheme": {
+            "label": "Tema Kode"
+          },
+          "fontSize": "Ukuran Font",
+          "themeTray": "Tempat Tema",
+          "toggleThemeTray": "Toggel Tempat Tema"
+        },
+        "applicationInfo": {
+          "label": "Info Aplikasi",
+          "appVersion": {
+            "label": "Versi Aplikasi",
+            "description": {
+              "manual": "Pembaruan terbaru diperiksa secara berkala dan Anda akan diberitahukan saat pembaruan baru tersedia. Anda juga dapat memeriksa pembaruan secara manual.",
+              "automatic": "Pembaruan terbaru diperiksa secara berkala dan diinstal secara otomatis. Anda juga dapat memeriksa pembaruan secara manual."
+            },
+            "viewChangelog": "Lihat Changelog",
+            "enableAutoUpdates": "Aktifkan Pembaruan Otomatis"
+          },
+          "modelsInfo": {
+            "label": "Info Model",
+            "description": "Perbarui metadata model lokal Anda. Informasi ini mencakup detail tentang setiap model, tetapi tidak mencakup file model itu sendiri. Ini berlaku untuk model yang disimpan secara lokal maupun model online.",
+            "fetchLatestModelsInfo": {
+              "label": "Ambil Info Model Terbaru"
+            }
+          },
+          "appSettings": {
+            "label": "Pengaturan Aplikasi",
+            "description": "Mengatur ulang pengaturan aplikasi ke default dapat membantu menyelesaikan masalah potensial. Ini akan mengembalikan preferensi pengguna default, seperti tampilan dan jalur model, tetapi tidak akan menghapus data apa pun, termasuk obrolan atau model yang diunduh/import.",
+            "resetAppSettings": {
+              "label": "Atur Ulang Pengaturan Aplikasi",
+              "success": "Pengaturan aplikasi telah direset"
+            }
+          },
+          "dataPaths": {
+            "label": "Jalur Data",
+            "description": "Semua data, termasuk model, percakapan, pengaturan, dan log, disimpan secara lokal di perangkat Anda. Hanya ubah isi direktori ini jika Anda memahami struktur file aplikasi",
+            "activeWorkspace": "Ruang Kerja Aktif"
+          },
+          "helpAndDiscussions": {
+            "label": "Bantuan & Diskusi",
+            "description": "Terhubung dengan komunitas kami di Discord untuk mendapatkan dukungan, berbagi umpan balik, dan tetap terinformasi",
+            "sayHi": "Katakan Hai!",
+            "viewDocs": "Lihat Dokumentasi"
+          }
+        }
+      },
+      "localAI": {
+        "manageLocalAIModels": "Kelola Model AI Lokal",
+        "localAIService": {
+          "label": "Layanan AI Lokal",
+          "saveAndRestartService": "Simpan dan Restart Layanan",
+          "restartingService": "Menyusun Ulang Layanan AI Lokal",
+          "modelsDirectory": {
+            "label": "Direktori Model",
+            "description": "Direktori untuk menyimpan LLM lokal.",
+            "editModelsPath": {
+              "label": "Edit Path Jalur",
+              "description": "Tetapkan lokasi yang Anda inginkan untuk mengunduh model.",
+              "willRestartLocalAIWarning": "Peringatan: Mengubah path model akan me-restart layanan AI Lokal untuk menerapkan perubahan.",
+              "selectModelsPath": "Pilih path Model",
+              "success": "Path model disimpan"
+            }
+          },
+          "serviceHealth": {
+            "label": "Kesehatan Layanan",
+            "description": "Status layanan AI Lokal saat ini. Jika Anda mengalami masalah dengan Layanan AI Lokal, coba restart layanan.",
+            "healthStatus": {
+              "starting": "Memulai",
+              "running": "Berjalan",
+              "stopped": "Dihentikan",
+              "unknown": "Tidak Diketahui"
+            },
+            "startService": "Mulai Layanan",
+            "restartService": "Restart Layanan",
+            "stopService": "Hentikan Layanan"
+          },
+          "serviceEndpoint": {
+            "label": "Endpoint Layanan",
+            "description": {
+              "base": "Alamat dari layanan AI Lokal untuk menghubungkan dari aplikasi lain.",
+              "serviceIsNotRunning": "Setelah layanan berjalan, alamat akan ditampilkan di sini.",
+              "serviceIsAvailableOnNetwork": "Karena layanan tersedia di jaringan, Anda juga bisa menghubungkannya menggunakan URL Layanan Jaringan dari perangkat lain."
+            },
+            "localURL": "URL Lokal",
+            "copyLocalURL": "Salin URL Layanan Lokal ke papan klip",
+            "networkURL": "URL Jaringan",
+            "copyNetworkURL": "Salin URL Layanan Jaringan ke papan klip",
+            "editPortNumber": {
+              "label": "Edit Nomor Port",
+              "success": "Nomor port Layanan AI Lokal disimpan",
+              "failure": "Gagal menyimpan nomor port Layanan AI Lokal"
+            }
+          },
+          "serviceVersion": {
+            "label": "Versi Layanan",
+            "description": {
+              "base": "Versi dari layanan AI Lokal.",
+              "mac": "Anda bisa memeriksa dan memperbarui ke versi terbaru atau menghapus layanan sepenuhnya."
+            },
+            "startServiceToCheckVersion": "Mulai layanan untuk memeriksa versi."
+          },
+          "updateService": {
+            "success": "Layanan AI Lokal telah diperbarui ke versi terbaru",
+            "failure": "Gagal memperbarui Layanan AI Lokal ke versi terbaru"
+          },
+          "uninstallService": {
+            "label": "Hapus Layanan AI Lokal?",
+            "description": "Model Anda TIDAK akan dihapus dan tetap berada di tempatnya. Obrolan masa depan dengan model yang diunduh akan dinonaktifkan kecuali Anda menginstal kembali layanan."
+          }
+        },
+        "serviceConfigurations": {
+          "label": "Konfigurasi Layanan",
+          "description": "Konfigurasi ini diterapkan pada Layanan AI Lokal saat memulai. Layanan AI Lokal akan restart otomatis setelah Anda mengubah dan menyimpan pengaturan ini.",
+          "configurePortNumber": {
+            "label": "Konfigurasi Nomor Port",
+            "description": "Nomor port yang akan digunakan layanan AI Lokal. Kosongkan jika ingin menggunakan port default."
+          },
+          "maximumParallelChats": {
+            "label": "Obrolan Paralel Maksimal",
+            "description": "Jumlah maksimum sesi obrolan bersamaan (ketika menggunakan mode split)."
+          },
+          "maximumLoadedModels": {
+            "label": "Model Maksimal yang Dimuat",
+            "description": "Jumlah maksimum LLM yang dimuat bersamaan. Menyimpan lebih banyak LLM siap di memori memungkinkan respons awal yang lebih cepat, tetapi mengonsumsi sumber daya sistem tambahan."
+          },
+          "enableNetworkAccess": {
+            "label": "Aktifkan Akses Jaringan",
+            "description": "Izinkan perangkat lain di jaringan Anda mengakses layanan AI Lokal ini melalui alamat IP perangkat ini."
+          },
+          "allowedNetworkOrigins": {
+            "label": "Asal Jaringan yang Diperbolehkan",
+            "description": "Daftar asal jaringan yang diperbolehkan di sini (dipisahkan koma). Setiap entri harus dimulai dengan http:// atau https://. Gunakan * untuk memperbolehkan semua asal."
+          },
+          "captureServiceLogs": {
+            "label": "Tangkap Log Layanan",
+            "description": "Tangkap log layanan untuk tujuan debugging. Kami merekomendasikan mengaktifkan ini hanya saat diperlukan."
+          },
+          "advancedConfiguration": {
+            "description": "Masukkan JSON yang valid untuk mengatur variabel lingkungan untuk Layanan AI Lokal."
+          },
+          "save": {
+            "success": "Konfigurasi layanan disimpan",
+            "failure": "Gagal menyimpan konfigurasi layanan"
+          },
+          "reset": {
+            "success": "Konfigurasi layanan direset ke nilai default",
+            "failure": "Gagal mereset konfigurasi layanan"
+          }
+        },
+        "chatModelConfiguration": {
+          "label": "Konfigurasi Model Obrolan",
+          "description": "Pengaturan ini diterapkan pada semua model yang dipasang selama sesi obrolan.",
+          "modelKeepAliveTimeout": {
+            "label": "Waktu Habis Model Keep-Alive",
+            "description": "Waktu (dalam menit) untuk mempertahankan model yang dimuat di memori setelah digunakan."
+          },
+          "advancedConfiguration": {
+            "description": "Masukkan JSON yang valid untuk mengirimkan parameter ekstra ke model selama sesi obrolan."
+          },
+          "save": {
+            "success": "Konfigurasi disimpan dan akan diterapkan selama obrolan",
+            "failure": "Gagal menyimpan konfigurasi model"
+          },
+          "reset": {
+            "success": "Konfigurasi model obrolan direset ke nilai default",
+            "failure": "Gagal mereset konfigurasi model obrolan"
+          }
+        }
+      },
+      "remoteModelProviders": {
+        "noModels": {
+          "label": "Belum Ada Penyedia Model AI Ditambahkan",
+          "description": "Mulailah dengan menambahkan penyedia baru seperti Open AI, Mistral, Google Gemini, Perplexity, endpoint yang kompatibel dengan Open AI, Ollama jarak jauh, Msty jarak jauh, dll."
+        },
+        "selectModels": "Pilih Model",
+        "filterAvailableModels": "Cari Model",
+        "description": {
+          "whereToGetKey": "Anda bisa mendapatkan kunci dari situs web penyedia API Anda.",
+          "whereItsStored": "Secara default, kami menyimpan kunci API Anda dengan aman dan lokal di keychain sistem operasi Anda. Anda mungkin akan diminta untuk kredensial Anda saat menyimpan dan mengambil kunci.",
+          "linuxKeyringConfiguration": "Ada masalah yang diketahui di Linux di mana, jika Anda salah mengonfigurasi keyring, Anda mungkin tidak bisa menyimpan kunci API. Pastikan keyring Anda dikonfigurasi dengan benar. Anda juga bisa mencoba menyimpan kunci tidak di keyring, tetapi di database aplikasi. Ini kurang aman, tetapi bisa bekerja.",
+          "keyHintInfo": "{keyHint} hanya petunjuk. Kunci sebenarnya disimpan dengan aman di keychain sistem operasi Anda kecuali Anda memilih untuk tidak menggunakan keychain. Jika Anda ingin memperbarui kunci, cukup berikan kunci baru dan klik tombol Perbarui.",
+          "ifOllamaOrMstyRemote": "Untuk dapat mencoba mengambil model secara otomatis, Anda perlu memberikan kunci API lagi."
+        },
+        "addItem": {
+          "success": "Penyedia model {providerName} ditambahkan"
+        },
+        "updateItem": {
+          "success": "Penyedia model {providerName} diperbarui"
+        },
+        "deleteItem": {
+          "label": "Hapus penyedia model {providerName}?",
+          "description": "Ini hanya akan menghapus kunci penyedia model dan model terkait. Obrolan sebelumnya dengan model dari penyedia ini TIDAK akan dihapus.",
+          "success": "Penyedia model {providerName} dihapus"
+        },
+        "namePlaceholder": "mis. Model {providerName} saya",
+        "saveInKeychain": "Simpan kunci dengan aman di keychain",
+        "apiEndpoint": "Endpoint API",
+        "serviceEndpoint": "Endpoint Layanan",
+        "fetchModels": {
+          "label": "Ambil Model",
+          "refetchModels": "Ambil Ulang Model",
+          "description": "Berikan endpoint yang valid dan tekan Ambil Model untuk mengambil model yang tersedia",
+          "noModelsAvailable": "Tidak ada model tersedia",
+          "error": "Gagal mengambil model yang tersedia. Apakah endpoint layanan sudah benar?",
+          "info": "Mencoba mengambil model yang tersedia di {endpoint}"
+        },
+        "openAICompatibleUrlInfo": "Pastikan untuk menyertakan http:// atau https://",
+        "customModels": {
+          "label": "Model Kustom | Model Kustom"
+        },
+        "targetURI": "URI Target",
+        "uriOptions": "Opsi URI",
+        "instanceName": "Nama Instance",
+        "deploymentName": "Nama Deployment"
+      },
+      "defaultPrompts": {
+        "label": "Prompt Default",
+        "placeholder": "Pilih jenis prompt...",
+        "defaultModelPrompt": {
+          "label": "Prompt Model Default",
+          "placeholder": "Klik untuk mengatur prompt model default global..."
+        },
+        "autoTitleGenerationPrompt": {
+          "label": "Prompt Pembuatan Judul Otomatis",
+          "placeholder": "Buat sebuah judul..."
+        },
+        "realTimeDataSearchQueryPrompt": {
+          "label": "Prompt Sintesis Query Pencarian Data Real-Time",
+          "placeholder": "Sintesis query pencarian Data Real-Time..."
+        },
+        "updatePrompt": {
+          "success": "Updated {promptType}"
+        }
+      },
+      "licenseAndAccess": {
+        "label": "Lisensi dan Akses",
+        "enterLicenseKey": "Masukkan kunci Lisensi Anda",
+        "aurum": {
+          "label": "Lisensi Aurum",
+          "description": "Buka semua fitur premium Msty dengan mengaktifkan Lisensi Aurum Anda.",
+          "purchaseLicense": "Beli Lisensi",
+          "activate": {
+            "label": "Aktifkan Lisensi Aurum",
+            "success": "Lisensi Aurum diaktifkan",
+            "failure": "Tidak dapat mengaktifkan Lisensi Aurum Anda. Silakan coba lagi. {errorMessage}"
+          },
+          "activated": {
+            "description": "Terima kasih telah mendukung Msty! Lisensi Aurum Anda aktif dan Anda telah membuka semua fitur premium Msty."
+          }
+        },
+        "aurumLifetime": {
+          "label": "Aurum Lifetime Access Club",
+          "description": "Bergabunglah dengan lingkaran emas pendukung dengan pembelian satu kali Aurum Lifetime Access dan buka semua fitur premium Msty selamanya.",
+          "notASubscription": "Catatan: Ini adalah pembelian satu kali dan bukan langganan. Upgrade dari Lisensi Aurum ke Aurum Lifetime Access tidak memungkinkan.",
+          "join": "Bergabung dengan Klub",
+          "activate": {
+            "label": "Aktifkan Lisensi Aurum Lifetime",
+            "success": "Terima kasih! Anda sekarang adalah bintang dari Aurum Lifetime Club!",
+            "failure": "Tidak dapat mengaktifkan Lisensi Aurum Lifetime Anda. Silakan coba lagi. {errorMessage}"
+          },
+          "activated": {
+            "label": "Akses Aurum Lifetime",
+            "description": "Anda adalah bintang dari Aurum Lifetime Access Club! Terima kasih telah mendukung kami dan selamat datang di klub!",
+            "additionalNote": "Dukungan Anda memungkinkan kami untuk fokus pada penambahan fitur baru dan meningkatkan aplikasi tanpa pengaruh eksternal."
+          }
+        }
+      }
+    },
+    "searchModels": {
+      "label": "Cari model...",
+      "noModelsFound": "Tidak ada model ditemukan"
+    },
+    "localAI": {
+      "label": "AI Lokal",
+      "browseModels": "Jelajahi & Unduh Model Online",
+      "startService": {
+        "failure": "Gagal memulai Layanan AI Lokal. Silakan coba lagi."
+      }
+    },
+    "ggufModel": {
+      "label": "Model GGUF | Model GGUF",
+      "import": {
+        "confirmation": "Bagaimana Anda ingin mengimpor model GGUF?",
+        "link": {
+          "description": "Pilih {action} untuk membuat symlink ke model GGUF di direktori model AI lokal. Ini akan menghemat ruang disk tetapi model akan tidak dapat digunakan jika file asli dihapus atau dipindahkan."
+        },
+        "copy": {
+          "description": "Pilih {action} untuk membuat salinan model GGUF di direktori model AI lokal. Ini akan mengkonsumsi ruang disk tambahan tetapi model TIDAK akan dihapus jika file asli dihapus."
+        }
+      }
+    },
+    "remoteModelProviders": {
+      "label": "Penyedia Model Jarak Jauh | Penyedia Model Jarak Jauh"
+    },
+    "vaporMode": {
+      "label": "Mode Vapor",
+      "description": "Obrolan tidak akan disimpan dalam riwayat Anda dan akan hilang ketika Anda menonaktifkannya",
+      "isEnabledDescription": "Mode Vapor Diaktifkan"
+    },
+    "keyboardAndMouse": {
+      "keyPlusClick": "Key + Klik",
+      "clickToEdit": "Klik untuk mengedit",
+      "chatSelection": {
+        "adjacent": "Pilih obrolan bersebelahan dalam folder",
+        "nonAdjacent": "Pilih obrolan mana pun yang tidak bersebelahan"
+      },
+      "skipConfirmationDialog": "Lewati dialog konfirmasi untuk berbagai tindakan",
+      "shortcuts": {
+        "usefulShortcuts": "Pintasan Berguna",
+        "copyLastAIMessage": "Salin Pesan AI Terakhir",
+        "regenerateLastAIMessage": "Regenerasi Pesan AI Terakhir",
+        "editLastUserMessage": "Edit Pesan Pengguna Terakhir",
+        "editLastAIMessage": "Edit Pesan AI Terakhir",
+        "navigateBetweenMessages": "Navigasi Antar Pesan"
+      },
+      "selection": "Pilih | Pilihan",
+      "dropHere": "Jatuhkan di sini"
+    },
+    "aurumPerk": {
+      "label": "Aurum Perk",
+      "description": "Fitur ini hanya tersedia untuk pemegang lisensi Aurum kami.",
+      "supportUs": "Pertimbangkan untuk mendukung pekerjaan kami dengan membeli lisensi."
+    },
+    "themeTray": "Tempat Tema",
+    "chat": "Obrolan | Obrolan-Obrolan",
+    "title": "Judul",
+    "contextShield": "Perisai Konteks",
+    "regenerate": "Regenerasi {item}",
+    "collapse": "Perkecil {item}",
+    "expand": "Perluas {item}",
+    "sidebar": "Sidebar",
+    "folder": {
+      "label": "Folder | Folder-folder",
+      "deleteItem": {
+        "label": "Hapus Folder {name}",
+        "confirmation": "Hapus Folder {name}?"
+      }
+    },
+    "allFolders": "Semua Folder",
+    "allConversations": "Semua Obrolan",
+    "bookmark": "Penanda | Penanda-penanda",
+    "copyToClipboard": "Salin {item} ke Papan Klip",
+    "fuzzySearch": "Pencarian Kabur",
+    "matchCase": "Cocokkan Huruf Kapital",
+    "item": "Item | Item-item",
+    "view": "Lihat {item}",
+    "message": "Pesan | Pesan-pesan",
+    "itemOptions": " Opsi {item}",
+    "itemName": "Nama {item}",
+    "modelInstructions": "Instruksi Model",
+    "applyToThisItem": "Terapkan ke {item} ini",
+    "activateItem": {
+      "label": "Aktifkan {item}",
+      "success": "{item} diaktifkan",
+      "failure": "Tidak dapat mengaktifkan {item}"
+    },
+    "saveChanges": "Simpan Perubahan",
+    "saveItem": {
+      "label": "Simpan {item}",
+      "as": "Simpan {item} Sebagai",
+      "asDefaultFor": "Simpan sebagai default untuk {item}",
+      "success": "{item} disimpan",
+      "failure": "Tidak dapat menyimpan {item}"
+    },
+    "resetItem": {
+      "label": "Reset {item}",
+      "success": "{item} direset",
+      "failure": "Tidak dapat mereset {item}"
+    },
+    "uninstallItem": {
+      "label": "Hapus {item}",
+      "confirmation": "Hapus {item}?",
+      "success": "{item} dihapus",
+      "failure": "Tidak dapat menghapus {item}"
+    },
+    "addItem": {
+      "label": "Tambah {item}",
+      "success": "{item} ditambahkan",
+      "failure": "Tidak dapat menambahkan {item}"
+    },
+    "moveItem": {
+      "label": "Pindahkan {item}",
+      "success": "{item} dipindahkan",
+      "failure": "Tidak dapat memindahkan {item}"
+    },
+    "bookmarkItem": {
+      "label": "Penanda {item}",
+      "success": "{item} ditandai",
+      "failure": "Tidak dapat menandai {item}"
+    },
+    "removeItem": {
+      "label": "Hapus {item}",
+      "success": "{item} dihapus",
+      "failure": "Tidak dapat menghapus {item}"
+    },
+    "removeItemFrom": {
+      "success": "{item} dihapus dari {source}",
+      "failure": "Tidak dapat menghapus {item} dari {source}"
+    },
+    "clearAndSave": "Bersihkan dan Simpan",
+    "clearItem": {
+      "label": "Bersihkan {item}"
+    },
+    "hideItem": {
+      "label": "Sembunyikan {item}"
+    },
+    "deleteItem": {
+      "label": "Hapus {item}",
+      "confirmation": "Hapus {item}?",
+      "success": "{item} dihapus",
+      "failure": "Tidak dapat menghapus {item}"
+    },
+    "cloneItem": {
+      "label": "Kloning {item}",
+      "success": "{item} dikloning",
+      "failure": "Tidak dapat mengkloning {item}"
+    },
+    "createItem": {
+      "label": "Buat {item}",
+      "success": "{item} dibuat",
+      "failure": "Tidak dapat membuat {item}"
+    },
+    "updateItem": {
+      "label": "Perbarui {item}",
+      "confirmation": "Perbarui {item}?",
+      "success": "{item} diperbarui",
+      "failure": "Tidak dapat memperbarui {item}"
+    },
+    "mergeItem": {
+      "label": "Gabungkan {item}",
+      "success": "{item} digabungkan",
+      "failure": "Tidak dapat menggabungkan {item}"
+    },
+    "copyItem": {
+      "label": "Salin {item}",
+      "createNew": "Buat Salinan Baru",
+      "success": "{item} disalin",
+      "failure": "Tidak dapat menyalin {item}"
+    },
+    "replaceItem": {
+      "label": "Ganti {item}",
+      "success": "{item} diganti",
+      "failure": "Tidak dapat mengganti {item}"
+    },
+    "linkItem": {
+      "label": "Tautkan {item}",
+      "success": "{item} ditautkan",
+      "failure": "Tidak dapat menautkan {item}"
+    },
+    "generateItem": {
+      "label": "Hasilkan {item}",
+      "success": "{item} dihasilkan",
+      "failure": "Tidak dapat menghasilkan {item}"
+    },
+    "importItem": {
+      "label": "Impor {item}",
+      "success": "{item} diimpor",
+      "failure": "Tidak dapat mengimpor {item}"
+    },
+    "bookmarkedMessagesAndChats": {
+      "label": "Pesan dan Obrolan yang Ditandai",
+      "messages": {
+        "description": "Pesan yang Anda tandai akan muncul di sini. Mulailah dengan mengklik ikon penanda dari opsi pesan obrolan.",
+        "deletedMessageNavigationFailure": "Tidak dapat menavigasi ke pesan. Pesan telah dihapus."
+      },
+      "chats": {
+        "description": "Obrolan yang Anda tandai akan muncul di sini. Mulailah dengan mengklik opsi penanda obrolan dari opsi obrolan terpisah."
+      }
+    },
+    "splitChat": {
+      "label": "Obrolan Terpisah | Obrolan Terpisah",
+      "single": "Obrolan Terpisah Tunggal"
+    },
+    "splitPreset": {
+      "label": "Preset Terpisah | Preset Terpisah",
+      "deleteItem": {
+        "label": "Hapus preset terpisah {item}?",
+        "description": "Ini akan menghapus preset terpisah dan konfigurasinya.",
+        "success": "Preset terpisah {item} dihapus"
+      },
+      "saveLayoutAs": "Simpan Tata Letak Terpisah Sebagai"
+    },
+    "showAllItem": "Tampilkan Semua {item}",
+    "dockItem": "Dock {item}",
+    "undockAllItem": "Undock Semua {item}",
+    "switchToItem": {
+      "label": "Berpindah ke {item}"
+    },
+    "conversation": {
+      "label": "Obrolan | Obrolan-Obrolan",
+      "title": {
+        "label": "Judul Obrolan",
+        "edit": "Edit Judul Obrolan"
+      },
+      "startChattingWithModel": "Mulai obrolan dengan {modelName}",
+      "noConversationsFound": "Tidak ada obrolan ditemukan",
+      "noChatModelSelected": "Tidak ada model obrolan yang dipilih",
+      "folder": {
+        "startNewConversation": "Mulai obrolan baru di {folderName}",
+        "delete": {
+          "description": "Ini akan menghapus semua obrolan terkait dan pesan-pesannya."
+        },
+        "deleteAllConversations": {
+          "description": "Ini akan menghapus semua obrolan di dalam {folderName}."
+        }
+      },
+      "delete": {
+        "description": "Ini juga akan menghapus pesan obrolan terkait."
+      },
+      "merge": {
+        "description": "Ini akan menggabungkan {itemCount} obrolan menjadi satu obrolan dengan beberapa terpisah."
+      },
+      "flattenItem": "Ratakan {item}",
+      "cloneAndFlatten": "Kloning dan Ratakan",
+      "inputBox": {
+        "placeholder": {
+          "focused": "Ketik pesan Anda di sini",
+          "unfocused": "Tekan / untuk fokus di sini dan mulai mengetik"
+        }
+      },
+      "shareWithSyncedSplits": "Bagikan dengan Split yang Disinkronkan",
+      "autoGenerateTitle": {
+        "label": "Buat judul otomatis menggunakan {model}",
+        "selectAModel": "Buat judul otomatis dengan memilih model",
+        "selectDifferentModel": "{keyCombo} + Klik untuk memilih model lain",
+        "failure": "Tidak dapat membuat judul obrolan otomatis"
+      },
+      "flowchat": {
+        "label": "Flowchat",
+        "description": "Klik untuk melihat peta visual dari obrolan Anda"
+      }
+    },
+    "setupItem": {
+      "label": "Atur {item}",
+      "success": "Pengaturan {item} selesai",
+      "failure": "Gagal mengatur {item}"
+    },
+    "downloadItem": {
+      "label": "Unduh {item}",
+      "success": "{item} diunduh",
+      "failure": "Gagal mengunduh {item}"
+    },
+    "continue": "Lanjutkan",
+    "onboarding": {
+      "title": "Selamat datang di Msty!",
+      "subTitle": "Bagaimana Anda ingin memulai?",
+      "setupLocalAI": {
+        "pros": {
+          "item1": "Gunakan model seperti DeepSeek R1, Meta Llama3.3, Microsoft Phi4, IBM Granite, Google Gemma, dll",
+          "item2": "Obrolan offline",
+          "item3": "Model gratis untuk digunakan dan diunduh",
+          "item4": "Instal model khusus"
+        },
+        "cons": {
+          "item1": "Memerlukan penyimpanan dan memori tambahan"
+        }
+      },
+      "addRemoteModelsProvider": {
+        "pros": {
+          "item1": "Gunakan OpenAI GPT, Azure, Claude Sonnet, Google Gemini, Perplexity, Remote Ollama, dll",
+          "item2": "Mulai cepat",
+          "item3": "Tidak perlu mengunduh"
+        },
+        "cons": {
+          "item1": "Memerlukan koneksi internet untuk obrolan",
+          "item2": "Biaya penyedia dapat berlaku"
+        }
+      },
+      "downloadModel": {
+        "description": "Unduh {modelName} model {modelSize} untuk AI Lokal. Ini hanya untuk memulai, Anda selalu dapat mengunduh lebih banyak model nanti. Model hanya diunduh jika belum tersedia secara lokal."
+      },
+      "inProgress": {
+        "description": "Proses ini biasanya memakan waktu beberapa menit tergantung kecepatan internet Anda. Jika memakan waktu lebih dari 10-15 menit, silakan restart aplikasi. Jika masalah tetap ada, harap hubungi kami."
+      },
+      "onboardWithOllama": {
+        "label": "Punya Ollama?",
+        "description": "Mulai cepat menggunakan model Ollama dari {folderPath}"
+      },
+      "success": "Itu saja! Anda sekarang dapat mulai obrolan."
+    },
+    "locateInFolder": {
+      "mac": "Tampilkan di Finder",
+      "windows": "Tampilkan di File Explorer",
+      "linux": "Temukan di File Manager"
+    },
+    "showItem": {
+      "label": "Tampilkan {item}"
+    },
+    "createOrImportItem": {
+      "label": "Buat atau Impor {item}"
+    },
+    "apiKey": "Kunci API | Kunci API",
+    "settingsAndConfigs": "Pengaturan & Konfigurasi",
+    "selectItemLocation": "Pilih lokasi {item}",
+    "icon": "Ikon | Ikon-ikon",
+    "defaultItem": "Item Default {item}",
+    "workspace": {
+      "label": "Workspace | Workspaces",
+      "defaultWorkspace": "Workspace Default",
+      "removeWorkspace": {
+        "label": "Hapus Workspace",
+        "confirmation": "Hapus Workspace {name}?"
+      },
+      "deleteFromDisk": {
+        "label": "Hapus Workspace dan Hapus dari Disk"
+      },
+      "createAndSwitch": {
+        "label": "Buat dan Beralih",
+        "title": "Tetap Terorganisir dengan Workspaces",
+        "description": "Jaga Obrolan, Knowledge Stacks, Prompt, dll terorganisir secara terpisah dengan membuat workspace terpisah dalam folder mereka sendiri dan dibagikan ke seluruh perangkat.",
+        "whatToCopy": "Apa yang akan disalin dari workspace {workspaceName}?",
+        "doNotCopyAnything": "Jangan salin apa pun; mulai dari awal",
+        "apiKeysWarning": {
+          "description": "Menyalin kunci API yang disimpan dengan aman dari workspace {workspaceName} tanpa memperbarui mereka terlebih dahulu tidak akan berhasil jika workspace ini diimpor ke perangkat lain.",
+          "updateAPIKeys": "Perbarui kunci API untuk workspace baru sehingga saya bisa menggunakannya di beberapa perangkat",
+          "doNotUpdateAPIKeys": "Jangan perbarui kunci API untuk workspace baru. (Saya mengerti bahwa kunci yang disalin dengan aman yang disalin tidak akan bekerja dengan benar jika saya mengimpor workspace ini di perangkat lain)"
+        }
+      },
+      "switch": {
+        "success": "Berpindah ke workspace {workspaceName}",
+        "failure": "Gagal berpindah ke workspace {workspaceName}",
+        "directoryMissing": "Direktori workspace {folderPath} hilang"
+      },
+      "remove": {
+        "confirmation": "Hapus Workspace {workspaceName}?",
+        "description": "Ini hanya akan menghapus workspace dan TIDAK akan menghapus folder data yang disimpan di disk.",
+        "withDataFolder": {
+          "label": "Hapus juga folder data. Tindakan ini tidak dapat dibatalkan.",
+          "description": "Ini akan menghapus workspace serta menghapus folder data yang disimpan di disk.",
+          "warning": "Folder data workspace di {folderPath} akan dihapus"
+        }
+      }
+    },
+    "bookmarkedItem": "Item yang Ditandai {item}",
+    "warning": "Peringatan",
+    "manageItem": "Kelola {item}",
+    "itemInBeta": "{item} (Beta)",
+    "prompt": "Prompt | Prompt-prompt",
+    "quickPrompts": "Prompt Cepat",
+    "modelSelector": "Pemilih Model",
+    "promptLibrary": {
+      "label": "Perpustakaan Prompt"
+    },
+    "knowledgeStacks": {
+      "label": "Knowledge Stack | Knowledge Stacks"
+    },
+    "updateApp": {
+      "isAlreadyOnLatest": "Anda sudah menggunakan versi terbaru",
+      "downloadingAndInstallingLatest": "Mengunduh dan menginstal versi terbaru"
+    },
+    "modelsInfo": "Info Model",
+    "updateModelsInfo": {
+      "success": "Info Model diperbarui ke versi terbaru",
+      "failure": "Gagal memperbarui Info Model ke versi terbaru"
+    },
+    "think": "Berpikir",
+    "seeWhatsNew": "Lihat apa yang baru di versi terbaru.",
+    "appUpdate": {
+      "latestVersionBeingDownloaded": "Versi terbaru {version} dari Msty tersedia dan sedang diunduh. Harap tunggu hingga unduhan selesai.",
+      "latestVersionBeingInstalled": "Versi terbaru {version} dari Msty sedang diinstal. Aplikasi akan restart otomatis.",
+      "latestVersionReadyToBeInstalled": "Versi terbaru {version} dari Msty tersedia dan siap diinstal. Harap klik tombol untuk menerapkan pembaruan."
+    }
+  }
