@@ -1,0 +1,808 @@
+{
+  "version": "Versión",
+  "moreOptions": "Más Opciones",
+  "path": "Ruta",
+  "discardChanges": "Descartar Cambios",
+  "checkForUpdates": "Buscar Actualizaciones",
+  "invalidJSON": "JSON Inválido",
+  "eg": "ej. {item}",
+  "advancedConfiguration": "Configuración Avanzada",
+  "appData": "Datos de la Aplicación",
+  "appLogs": "Registros de la Aplicación",
+  "localAIServiceLogs": "Registros del Servicio de IA Local",
+  "cancel": "Cancelar",
+  "confirm": "Confirmar",
+  "new": "Nuevo {item}",
+  "edit": "Editar {item}",
+  "select": "Seleccionar {item}",
+  "fetch": "Obtener {item}",
+  "refetch": "Volver a obtener {item}",
+  "filter": "Filtrar {item}",
+  "search": "Buscar {item}",
+  "provider": "Proveedor",
+  "learnMore": "Más información.",
+  "name": "Nombre",
+  "model": "Modelo | Modelos",
+  "modelId": "ID del Modelo",
+  "toggle": "Alternar {item}",
+  "loading": "Cargando {item}...",
+  "license": "Licencia",
+  "apiVersion": "Versión de API",
+  "settings": {
+    "label": "Configuración | Configuraciones",
+    "description": "Editar la Configuración de Msty",
+    "general": {
+      "label": "General",
+      "language": {
+        "label": "Idioma",
+        "description": "Selecciona tu idioma preferido para Msty. Si tu idioma deseado no está disponible, puedes contribuir con traducciones a través de nuestro repositorio i18n."
+      },
+      "autoGenerateChatTitle": {
+        "label": "Generar Título de Chat Automáticamente",
+        "description": "Cuando esté habilitado, los títulos de nuevos chats se generarán automáticamente."
+      },
+      "localModels": "Modelos Locales",
+      "remoteModels": "Modelos Remotos",
+      "enableLinksInChatMessages": {
+        "label": "Habilitar Enlaces en Mensajes de Chat",
+        "description": "Habilitar o deshabilitar enlaces en mensajes de chat. Deshabilitar esto evitará que los enlaces sean clicables. Recomendamos deshabilitar esto por razones de seguridad."
+      },
+      "enableRtlSupport": {
+        "label": "Habilitar Soporte RTL",
+        "description": "Útil para idiomas que se leen de derecha a izquierda."
+      },
+      "enableNewMessageRenderer": {
+        "label": "Habilitar Nuevo Motor de Renderizado (Beta)",
+        "description": "Habilita el nuevo motor de renderizado, que es más rápido y soporta etiquetas de pensamiento/razonamiento. Requiere reiniciar la aplicación."
+      },
+      "networkProxyConfiguration": {
+        "label": "Configuración de Proxy de Red",
+        "proxyAddress": {
+          "label": "Dirección del Proxy",
+          "description": "Especifica la dirección del proxy para enrutar el tráfico de red. Si la configuración se restablece, es posible que necesites cerrar y reiniciar Msty para que los cambios surtan efecto completamente."
+        },
+        "reset": {
+          "success": "Configuración de proxy restablecida"
+        },
+        "save": {
+          "success": "Proxy configurado"
+        }
+      },
+      "theme": {
+        "label": "Tema",
+        "appearance": {
+          "label": "Apariencia",
+          "light": "Claro",
+          "dark": "Oscuro",
+          "system": "Sistema"
+        },
+        "accentColor": {
+          "label": "Color de Acento"
+        },
+        "fontStyle": {
+          "label": "Estilo de Fuente"
+        },
+        "codeTheme": {
+          "label": "Tema de Código"
+        },
+        "fontSize": "Tamaño de Fuente",
+        "themeTray": "Bandeja de Temas",
+        "toggleThemeTray": "Alternar Bandeja de Temas"
+      },
+      "applicationInfo": {
+        "label": "Información de la Aplicación",
+        "appVersion": {
+          "label": "Versión de la Aplicación",
+          "description": {
+            "manual": "Las últimas actualizaciones se verifican periódicamente y serás notificado cuando una nueva actualización esté disponible. Puedes verificar manualmente las actualizaciones.",
+            "automatic": "Las últimas actualizaciones se verifican periódicamente y se instalan automáticamente. También puedes verificar manualmente las actualizaciones."
+          },
+          "viewChangelog": "Ver Registro de Cambios",
+          "enableAutoUpdates": "Habilitar Actualizaciones Automáticas"
+        },
+        "modelsInfo": {
+          "label": "Información de Modelos",
+          "description": "Actualiza los metadatos de tu modelo local. Esta información incluye detalles sobre cada modelo, pero no los archivos del modelo en sí. Esto se aplica tanto a modelos almacenados localmente como en línea",
+          "fetchLatestModelsInfo": {
+            "label": "Obtener Información de Modelos Más Reciente"
+          }
+        },
+        "appSettings": {
+          "label": "Configuración de la Aplicación",
+          "description": "Restablecer la configuración de la aplicación a sus valores predeterminados puede ayudar a resolver problemas potenciales. Esto restaurará las preferencias de usuario predeterminadas, como apariencia y ruta de modelos, pero no eliminará ningún dato, incluyendo chats o modelos descargados/importados.",
+          "resetAppSettings": {
+            "label": "Restablecer Configuración de la Aplicación",
+            "success": "La configuración de la aplicación fue restablecida"
+          }
+        },
+        "dataPaths": {
+          "label": "Rutas de Datos",
+          "description": "Todos los datos, incluyendo modelos, conversaciones, configuraciones y registros, se almacenan localmente en tu dispositivo. Solo modifica el contenido de estos directorios si estás familiarizado con la estructura de archivos de la aplicación",
+          "activeWorkspace": "Espacio de Trabajo Activo"
+        },
+        "helpAndDiscussions": {
+          "label": "Ayuda y Discusiones",
+          "description": "Conéctate con nuestra comunidad en Discord para obtener soporte, compartir tus comentarios y mantenerte informado",
+          "sayHi": "¡Saluda!",
+          "viewDocs": "Ver Documentación"
+        }
+      }
+    },
+    "localAI": {
+      "manageLocalAIModels": "Gestionar Modelos de IA Local",
+      "localAIService": {
+        "label": "Servicio de IA Local",
+        "saveAndRestartService": "Guardar y Reiniciar Servicio",
+        "restartingService": "Reiniciando Servicio de IA Local",
+        "modelsDirectory": {
+          "label": "Directorio de Modelos",
+          "description": "Directorio para almacenar LLMs locales.",
+          "editModelsPath": {
+            "label": "Editar Ruta de Modelos",
+            "description": "Establece tu ubicación deseada para descargar los modelos.",
+            "willRestartLocalAIWarning": " Nota: Cambiar la ruta de modelos reiniciará el servicio de IA Local para que los cambios surtan efecto.",
+            "selectModelsPath": "Seleccionar Ruta de Modelos",
+            "success": "Ruta de modelos guardada"
+          }
+        },
+        "serviceHealth": {
+          "label": "Estado del Servicio",
+          "description": "Estado actual del servicio de IA Local. Si experimentas problemas con la IA Local, por favor intenta reiniciar el servicio.",
+          "healthStatus": {
+            "starting": "Iniciando",
+            "running": "Ejecutándose",
+            "stopped": "Detenido",
+            "unknown": "Desconocido"
+          },
+          "startService": "Iniciar Servicio",
+          "restartService": "Reiniciar Servicio",
+          "stopService": "Detener Servicio"
+        },
+        "serviceEndpoint": {
+          "label": "Punto de Conexión del Servicio",
+          "description": {
+            "base": "La dirección del servicio de IA Local para conectar desde otras aplicaciones.",
+            "serviceIsNotRunning": "Una vez que el servicio esté ejecutándose, la dirección se mostrará aquí.",
+            "serviceIsAvailableOnNetwork": "Debido a que el servicio está disponible en la red, también puedes conectarte a él usando la URL del Servicio de Red desde otros dispositivos."
+          },
+          "localURL": "URL Local",
+          "copyLocalURL": "Copiar URL Local del Servicio al portapapeles",
+          "networkURL": "URL de Red",
+          "copyNetworkURL": "Copiar URL de Red del Servicio al portapapeles",
+          "editPortNumber": {
+            "label": "Editar Número de Puerto",
+            "success": "Número de puerto del Servicio de IA Local guardado",
+            "failure": "No se pudo guardar el número de puerto del Servicio de IA Local"
+          }
+        },
+        "serviceVersion": {
+          "label": "Versión del Servicio",
+          "description": {
+            "base": "La versión del servicio de IA Local.",
+            "mac": "Puedes verificar y actualizar a la última versión o desinstalar el servicio completamente."
+          },
+          "startServiceToCheckVersion": "Inicia el servicio para verificar la versión."
+        },
+        "updateService": {
+          "success": "El Servicio de IA Local ha sido actualizado a la última versión",
+          "failure": "Error al actualizar el Servicio de IA Local a la última versión"
+        },
+        "uninstallService": {
+          "label": "¿Desinstalar Servicio de IA Local?",
+          "description": "Tus modelos NO se eliminan y permanecen donde están. Los chats futuros con los modelos descargados se deshabilitarán a menos que reinstales el servicio."
+        }
+      },
+      "serviceConfigurations": {
+        "label": "Configuraciones del Servicio",
+        "description": "Estas configuraciones se aplican al servicio de IA Local al iniciar. El servicio de IA Local se reiniciará automáticamente después de que modifiques y guardes cualquiera de estas configuraciones.",
+        "configurePortNumber": {
+          "label": "Configurar Número de Puerto",
+          "description": "Número de puerto en el que se ejecutará el servicio de IA Local. Déjalo vacío para usar el puerto predeterminado."
+        },
+        "maximumParallelChats": {
+          "label": "Máximo de Chats Paralelos",
+          "description": "Número máximo de sesiones de chat concurrentes (cuando se usa el modo dividido)."
+        },
+        "maximumLoadedModels": {
+          "label": "Máximo de Modelos Cargados",
+          "description": "Número máximo de LLMs cargados concurrentemente. Mantener más LLMs listos en memoria permite respuestas iniciales más rápidas, pero consume recursos adicionales del sistema."
+        },
+        "enableNetworkAccess": {
+          "label": "Habilitar Acceso de Red",
+          "description": "Permitir que otros dispositivos en tu red accedan a este servicio de IA Local a través de la dirección IP de este dispositivo."
+        },
+        "allowedNetworkOrigins": {
+          "label": "Orígenes de Red Permitidos",
+          "description": "Lista aquí los orígenes de red permitidos (separados por comas). Cada entrada debe comenzar con http:// o https://. Usa * para permitir todos los orígenes."
+        },
+        "captureServiceLogs": {
+          "label": "Capturar Registros del Servicio",
+          "description": "Capturar registros del servicio para propósitos de depuración. Recomendamos habilitar esto solo cuando sea necesario."
+        },
+        "advancedConfiguration": {
+          "description": "Ingresa JSON válido para establecer variables de entorno para el servicio de IA Local."
+        },
+        "save": {
+          "success": "Configuraciones del servicio guardadas",
+          "failure": "Error al guardar las configuraciones del servicio"
+        },
+        "reset": {
+          "success": "Configuraciones del servicio restablecidas a valores originales",
+          "failure": "Error al restablecer las configuraciones del servicio"
+        }
+      },
+      "chatModelConfiguration": {
+        "label": "Configuración del Modelo de Chat",
+        "description": "Estas configuraciones se aplican a todos los modelos instalados durante las sesiones de chat.",
+        "modelKeepAliveTimeout": {
+          "label": "Tiempo de Espera de Modelo Activo",
+          "description": "Tiempo (en minutos) para mantener un modelo cargado en memoria después del uso."
+        },
+        "advancedConfiguration": {
+          "description": "Ingresa JSON válido para pasar parámetros adicionales a los modelos durante las sesiones de chat."
+        },
+        "save": {
+          "success": "Configuración guardada y se aplicará durante el chat",
+          "failure": "Error al guardar la configuración del modelo"
+        },
+        "reset": {
+          "success": "Configuración del modelo de chat restablecida a valores originales",
+          "failure": "Error al restablecer la configuración del modelo de chat"
+        }
+      }
+    },
+    "remoteModelProviders": {
+      "noModels": {
+        "label": "Aún No Se Han Agregado Proveedores de Modelos de IA",
+        "description": "Comienza agregando un nuevo proveedor como Open AI, Mistral, Google Gemini, Perplexity, puntos de conexión compatibles con Open AI, Ollama remoto, Msty remoto, etc."
+      },
+      "selectModels": "Seleccionar Modelos",
+      "filterAvailableModels": "Buscar Modelos",
+      "description": {
+        "whereToGetKey": "Puedes obtener la clave desde el sitio web de tu proveedor de API.",
+        "whereItsStored": "Por defecto, guardamos tus claves de API de forma segura y localmente en el llavero de tu sistema operativo. Es posible que se te soliciten tus credenciales al guardar y recuperar la clave.",
+        "linuxKeyringConfiguration": "Hay un problema conocido en Linux donde, si tienes mal configurado tu llavero, es posible que no puedas guardar tu clave de API. Por favor asegúrate de que tu llavero esté configurado correctamente. También puedes intentar guardar la clave no en el llavero sino en la base de datos de la aplicación. Esto es menos seguro pero podría funcionar.",
+        "keyHintInfo": "{keyHint} es solo una pista. La clave real se guarda de forma segura en el llavero de tu sistema operativo a menos que elijas no usar el llavero. Si quieres actualizar la clave, solo proporciona una nueva clave y haz clic en el botón Actualizar.",
+        "ifOllamaOrMstyRemote": "Para poder intentar obtener modelos automáticamente, necesitas proporcionar la clave de API nuevamente."
+      },
+      "addItem": {
+        "success": "Proveedor de modelos {providerName} agregado"
+      },
+      "updateItem": {
+        "success": "Proveedor de modelos {providerName} actualizado"
+      },
+      "deleteItem": {
+        "label": "¿Eliminar proveedor de modelos {providerName}?",
+        "description": "Esto solo eliminará la clave del proveedor de modelos y los modelos asociados. Los chats anteriores con modelos de este proveedor NO se eliminarán.",
+        "success": "Proveedor de modelos {providerName} eliminado"
+      },
+      "namePlaceholder": "ej., Mis modelos de {providerName}",
+      "saveInKeychain": "Guardar clave de forma segura en el llavero",
+      "apiEndpoint": "Punto de Conexión de API",
+      "serviceEndpoint": "Punto de Conexión del Servicio",
+      "fetchModels": {
+        "label": "Obtener Modelos",
+        "refetchModels": "Volver a Obtener Modelos",
+        "description": "Puedes obtener modelos una vez que hayas proporcionado un punto de conexión válido",
+        "openaiCompatibleDescription": "Puedes obtener modelos una vez que hayas proporcionado un punto de conexión válido y una clave de API, o puedes comenzar agregando un modelo personalizado",
+        "noModelsAvailable": "No hay modelos disponibles",
+        "error": "No se pudieron obtener los modelos disponibles. ¿Es correcto el punto de conexión del servicio?",
+        "info": "Intentando obtener modelos disponibles en {endpoint}"
+      },
+      "openAICompatibleUrlInfo": "Asegúrate de incluir http:// o https://",
+      "customModels": {
+        "label": "Modelo Personalizado | Modelos Personalizados"
+      },
+      "targetURI": "URI Objetivo",
+      "uriOptions": "Opciones de URI",
+      "instanceName": "Nombre de Instancia",
+      "deploymentName": "Nombre de Implementación"
+    },
+    "defaultPrompts": {
+      "label": "Prompts Predeterminados",
+      "placeholder": "Selecciona un tipo de prompt...",
+      "defaultModelPrompt": {
+        "label": "Prompt Predeterminado del Modelo",
+        "placeholder": "Haz clic para establecer el prompt predeterminado global del modelo..."
+      },
+      "autoTitleGenerationPrompt": {
+        "label": "Prompt de Generación Automática de Título",
+        "placeholder": "Genera un título..."
+      },
+      "realTimeDataSearchQueryPrompt": {
+        "label": "Prompt de Síntesis de Consulta de Búsqueda de Datos en Tiempo Real",
+        "placeholder": "Sintetizar consulta de búsqueda de datos en tiempo real..."
+      },
+      "updatePrompt": {
+        "success": "{promptType} actualizado"
+      }
+    },
+    "licenseAndAccess": {
+      "label": "Licencia y Acceso",
+      "enterLicenseKey": "Ingresa tu clave de Licencia",
+      "aurum": {
+        "label": "Licencia Aurum",
+        "description": "Desbloquea todas las características premium de Msty activando tu Licencia Aurum.",
+        "purchaseLicense": "Comprar Licencia",
+        "activate": {
+          "label": "Activar Licencia Aurum",
+          "success": "Licencia Aurum activada",
+          "failure": "No se pudo activar tu Licencia Aurum. Por favor intenta nuevamente. {errorMessage}"
+        },
+        "activated": {
+          "description": "¡Gracias por apoyar a Msty! Tu Licencia Aurum está activa y has desbloqueado todas las características premium de Msty."
+        }
+      },
+      "aurumLifetime": {
+        "label": "Club de Acceso de por Vida Aurum",
+        "description": "Únete al círculo dorado de partidarios con una compra única del Acceso de por Vida Aurum y desbloquea todas las características premium de Msty para siempre.",
+        "notASubscription": "Nota: Esta es una compra única y no una suscripción. No es posible actualizar de Licencia Aurum a Acceso de por Vida Aurum.",
+        "join": "Únete al Club",
+        "activate": {
+          "label": "Activar Licencia de por Vida Aurum",
+          "success": "¡Gracias! ¡Ahora eres una estrella del Club de por Vida Aurum!",
+          "failure": "No se pudo activar tu Licencia de por Vida Aurum. Por favor intenta nuevamente. {errorMessage}"
+        },
+        "activated": {
+          "label": "Acceso de por Vida Aurum",
+          "description": "¡Eres una estrella del Club de Acceso de por Vida Aurum! ¡Gracias por apoyarnos y bienvenido al club!",
+          "additionalNote": "Tu apoyo nos ha permitido enfocarnos en agregar nuevas características y mejorar la aplicación sin influencias externas."
+        }
+      }
+    }
+  },
+  "searchModels": {
+    "label": "Buscar modelos...",
+    "noModelsFound": "No se encontraron modelos"
+  },
+  "localAI": {
+    "label": "IA Local",
+    "browseModels": "Explorar y Descargar Modelos en Línea",
+    "startService": {
+      "failure": "Error al iniciar el Servicio de IA Local. Por favor intenta nuevamente."
+    }
+  },
+  "ggufModel": {
+    "label": "Modelo GGUF | Modelos GGUF",
+    "import": {
+      "confirmation": "¿Cómo quieres importar el/los modelo(s) GGUF?",
+      "link": {
+        "description": "Elige {action} para crear un enlace simbólico al/los modelo(s) GGUF en el directorio de modelos de IA local. Esto ahorrará espacio en disco pero el/los modelo(s) será(n) inutilizable(s) si el archivo original se elimina o mueve."
+      },
+      "copy": {
+        "description": "Elige {action} para crear una copia del/los modelo(s) GGUF en el directorio de modelos de IA local. Esto consumirá espacio adicional en disco pero el/los modelo(s) NO se eliminará(n) si el archivo original se elimina."
+      }
+    },
+    "windowsAndLinuxWarning": "Importante: Si estás en Windows o Linux, es posible que necesites ejecutar Msty como administrador antes de importar los modelos. De lo contrario, podrías tener problemas al chatear con los modelos importados más tarde."
+  },
+  "remoteModelProviders": {
+    "label": "Proveedor de Modelos Remotos | Proveedores de Modelos Remotos"
+  },
+  "vaporMode": {
+    "label": "Modo Vapor",
+    "description": "Las conversaciones no se guardarán en tu historial y desaparecerán cuando lo desactives",
+    "isEnabledDescription": "El Modo Vapor está Habilitado"
+  },
+  "keyboardAndMouse": {
+    "keyPlusClick": "Tecla + Clic",
+    "clickToEdit": "Haz clic para editar",
+    "chatSelection": {
+      "adjacent": "Seleccionar conversaciones adyacentes en una carpeta",
+      "nonAdjacent": "Seleccionar cualquier conversación no adyacente"
+    },
+    "skipConfirmationDialog": "Omitir diálogo de confirmación para varias acciones",
+    "shortcuts": {
+      "usefulShortcuts": "Atajos Útiles",
+      "copyLastAIMessage": "Copiar Último Mensaje de IA",
+      "regenerateLastAIMessage": "Regenerar Último Mensaje de IA",
+      "editLastUserMessage": "Editar Último Mensaje del Usuario",
+      "editLastAIMessage": "Editar Último Mensaje de IA",
+      "navigateBetweenMessages": "Navegar Entre Mensajes"
+    },
+    "selection": "Selección | Selecciones",
+    "dropHere": "Suelta en cualquier lugar aquí"
+  },
+  "aurumPerk": {
+    "label": "Beneficio Aurum",
+    "description": "Esta característica solo está disponible para nuestros poseedores de licencia Aurum.",
+    "supportUs": "Por favor considera apoyar nuestro trabajo comprando una licencia."
+  },
+  "themeTray": "Bandeja de Temas",
+  "chat": "Chat | Chats",
+  "title": "Título",
+  "contextShield": "Escudo de Contexto",
+  "regenerate": "Regenerar {item}",
+  "collapse": "Contraer {item}",
+  "expand": "Expandir {item}",
+  "sidebar": "Barra Lateral",
+  "folder": {
+    "label": "Carpeta | Carpetas",
+    "deleteItem": {
+      "label": "Eliminar Carpeta {name}",
+      "confirmation": "¿Eliminar Carpeta {name}?"
+    }
+  },
+  "allFolders": "Todas las Carpetas",
+  "allConversations": "Todas las Conversaciones",
+  "bookmark": "Marcador | Marcadores",
+  "copyToClipboard": "Copiar {item} al Portapapeles",
+  "fuzzySearch": "Búsqueda Difusa",
+  "fullTextSearch": "Búsqueda de Texto Completo",
+  "matchCase": "Coincidir Mayúsculas",
+  "item": "Elemento | Elementos",
+  "view": "Ver {item}",
+  "message": "Mensaje | Mensajes",
+  "itemOptions": "Opciones de {item}",
+  "itemName": "Nombre de {item}",
+  "modelInstructions": "Instrucciones del Modelo",
+  "applyToThisItem": "Aplicar a este {item}",
+  "activateItem": {
+    "label": "Activar {item}",
+    "success": "{item} activado",
+    "failure": "No se pudo activar {item}"
+  },
+  "saveChanges": "Guardar Cambios",
+  "saveItem": {
+    "label": "Guardar {item}",
+    "as": "Guardar {item} Como",
+    "asDefaultFor": "Guardar como predeterminado para {item}",
+    "success": "{item} guardado",
+    "failure": "No se pudo guardar {item}"
+  },
+  "resetItem": {
+    "label": "Restablecer {item}",
+    "success": "{item} restablecido",
+    "failure": "No se pudo restablecer {item}"
+  },
+  "uninstallItem": {
+    "label": "Desinstalar {item}",
+    "confirmation": "¿Desinstalar {item}?",
+    "success": "{item} desinstalado",
+    "failure": "No se pudo desinstalar {item}"
+  },
+  "addItem": {
+    "label": "Agregar {item}",
+    "success": "{item} agregado",
+    "failure": "No se pudo agregar {item}"
+  },
+  "moveItem": {
+    "label": "Mover {item}",
+    "success": "{item} movido",
+    "failure": "No se pudo mover {item}"
+  },
+  "bookmarkItem": {
+    "label": "Marcar {item}",
+    "success": "{item} marcado",
+    "failure": "No se pudo marcar {item}"
+  },
+  "removeItem": {
+    "label": "Eliminar {item}",
+    "success": "{item} eliminado",
+    "failure": "No se pudo eliminar {item}"
+  },
+  "removeItemFrom": {
+    "success": "{item} eliminado de {source}",
+    "failure": "No se pudo eliminar {item} de {source}"
+  },
+  "clearAndSave": "Limpiar y Guardar",
+  "clearItem": {
+    "label": "Limpiar {item}"
+  },
+  "hideItem": {
+    "label": "Ocultar {item}"
+  },
+  "deleteItem": {
+    "label": "Eliminar {item}",
+    "confirmation": "¿Eliminar {item}?",
+    "success": "{item} eliminado",
+    "failure": "No se pudo eliminar {item}"
+  },
+  "cloneItem": {
+    "label": "Clonar {item}",
+    "success": "{item} clonado",
+    "failure": "No se pudo clonar {item}"
+  },
+  "createItem": {
+    "label": "Crear {item}",
+    "success": "{item} creado",
+    "failure": "No se pudo crear {item}"
+  },
+  "updateItem": {
+    "label": "Actualizar {item}",
+    "confirmation": "¿Actualizar {item}?",
+    "success": "{item} actualizado",
+    "failure": "No se pudo actualizar {item}"
+  },
+  "mergeItem": {
+    "label": "Fusionar {item}",
+    "success": "{item} fusionado",
+    "failure": "No se pudo fusionar {item}"
+  },
+  "copyItem": {
+    "label": "Copiar {item}",
+    "createNew": "Crear Nueva Copia",
+    "success": "{item} copiado",
+    "failure": "No se pudo copiar {item}"
+  },
+  "replaceItem": {
+    "label": "Reemplazar {item}",
+    "success": "{item} reemplazado",
+    "failure": "No se pudo reemplazar {item}"
+  },
+  "linkItem": {
+    "label": "Enlazar {item}",
+    "success": "{item} enlazado",
+    "failure": "No se pudo enlazar {item}"
+  },
+  "generateItem": {
+    "label": "Generar {item}",
+    "success": "{item} generado",
+    "failure": "No se pudo generar {item}"
+  },
+  "importItem": {
+    "label": "Importar {item}",
+    "success": "{item} importado",
+    "failure": "No se pudo importar {item}"
+  },
+  "bookmarkedMessagesAndChats": {
+    "label": "Mensajes y Chats Marcados",
+    "messages": {
+      "description": "Tus mensajes marcados aparecen aquí. Comienza haciendo clic en el ícono de marcador desde las opciones del mensaje de chat.",
+      "deletedMessageNavigationFailure": "No se pudo navegar al mensaje. El mensaje fue eliminado."
+    },
+    "chats": {
+      "description": "Tus chats marcados aparecen aquí. Comienza haciendo clic en la opción de marcar chat desde las opciones del chat dividido."
+    }
+  },
+  "splitChat": {
+    "label": "Chat Dividido | Chats Divididos",
+    "single": "Chat Dividido Único"
+  },
+  "splitPreset": {
+    "label": "Preset Dividido | Presets Divididos",
+    "deleteItem": {
+      "label": "¿Eliminar preset dividido {item}?",
+      "description": "Esto eliminará el preset dividido y su configuración.",
+      "success": "Preset dividido {item} eliminado"
+    },
+    "saveLayoutAs": "Guardar Diseño Dividido Como"
+  },
+  "showAllItem": "Mostrar Todo {item}",
+  "dockItem": "Anclar {item}",
+  "undockAllItem": "Desanclar Todo {item}",
+  "switchToItem": {
+    "label": "Cambiar a {item}"
+  },
+  "conversation": {
+    "label": "Conversación | Conversaciones",
+    "title": {
+      "label": "Título de la conversación",
+      "edit": "Editar Título de la Conversación"
+    },
+    "startChattingWithModel": "Comenzar a chatear con {modelName}",
+    "noConversationsFound": "No se encontraron conversaciones",
+    "noChatModelSelected": "No se seleccionó modelo de chat",
+    "folder": {
+      "startNewConversation": "Iniciar una nueva conversación en {folderName}",
+      "delete": {
+        "description": "Esto eliminará todas las conversaciones asociadas y sus chats y mensajes."
+      },
+      "deleteAllConversations": {
+        "description": "Esto eliminará todas las conversaciones dentro de {folderName}."
+      }
+    },
+    "delete": {
+      "description": "Esto también eliminará los mensajes de chat asociados."
+    },
+    "merge": {
+      "description": "Esto fusionará {itemCount} conversaciones en una sola conversación con múltiples divisiones."
+    },
+    "flattenItem": "Aplanar {item}",
+    "cloneAndFlatten": "Clonar y Aplanar",
+    "inputBox": {
+      "placeholder": {
+        "focused": "Escribe tu mensaje aquí",
+        "unfocused": "Presiona / para enfocar aquí y comenzar a escribir"
+      }
+    },
+    "shareWithSyncedSplits": "Compartir con Divisiones Sincronizadas",
+    "autoGenerateTitle": {
+      "label": "Auto-generar título usando {model}",
+      "selectAModel": "Auto-generar título seleccionando un modelo",
+      "selectDifferentModel": "{keyCombo} + Clic para seleccionar un modelo diferente",
+      "failure": "No se pudo auto-generar el título de la conversación"
+    },
+    "flowchat": {
+      "label": "Flowchat",
+      "description": "Haz clic para ver un mapa visual de tus conversaciones"
+    },
+    "search": {
+      "label": "Buscar Conversaciones",
+      "description": "Comienza buscando una palabra clave",
+      "foundCountItems": "Se encontró {count} elemento | Se encontraron {count} elementos"
+    },
+    "reIndexMessages": {
+      "confirmation": {
+        "title": "¿Re-indexar Mensajes?",
+        "description": "Esto puede tomar un tiempo. Por favor no cierres Msty hasta que la re-indexación esté completa."
+      }
+    }
+  },
+  "setupItem": {
+    "label": "Configurar {item}",
+    "success": "Configuración de {item} completada",
+    "failure": "No se pudo configurar {item}"
+  },
+  "downloadItem": {
+    "label": "Descargar {item}",
+    "success": "{item} descargado",
+    "failure": "No se pudo descargar {item}"
+  },
+  "continue": "Continuar",
+  "onboarding": {
+    "title": "¡Bienvenido a Msty!",
+    "subTitle": "¿Cómo te gustaría comenzar?",
+    "setupLocalAI": {
+      "pros": {
+        "item1": "Usar modelos como DeepSeek R1, Meta Llama3.3, Microsoft Phi4, IBM Granite, Google Gemma, etc",
+        "item2": "Chatear sin conexión",
+        "item3": "Los modelos son gratuitos para usar y descargar",
+        "item4": "Instalar modelos especializados"
+      },
+      "cons": {
+        "item1": "Necesita almacenamiento y memoria adicionales"
+      }
+    },
+    "addRemoteModelsProvider": {
+      "pros": {
+        "item1": "Usar OpenAI GPT, Azure, Claude Sonnet, Google Gemini, Perplexity, Ollama Remoto, etc",
+        "item2": "Comenzar rápidamente",
+        "item3": "No se requiere descarga"
+      },
+      "cons": {
+        "item1": "Requiere conexión a internet para chatear",
+        "item2": "Pueden aplicar cargos del proveedor"
+      }
+    },
+    "downloadModel": {
+      "description": "Descargar {modelName} un modelo de {modelSize} para IA Local. Esto es solo para comenzar, siempre puedes descargar más modelos después. El modelo solo se descarga si no está disponible localmente."
+    },
+    "inProgress": {
+      "description": "Este proceso generalmente toma algunos minutos dependiendo de tu velocidad de internet. Si toma más de 10-15 minutos, por favor reinicia la aplicación. Si el problema persiste, por favor contáctanos."
+    },
+    "onboardWithOllama": {
+      "label": "¿Tienes Ollama?",
+      "description": "Comienza rápidamente usando modelos de Ollama desde {folderPath}"
+    },
+    "success": "¡Eso es todo! Ahora puedes comenzar a chatear."
+  },
+  "locateInFolder": {
+    "mac": "Mostrar en Finder",
+    "windows": "Mostrar en Explorador de Archivos",
+    "linux": "Localizar en Administrador de Archivos"
+  },
+  "showItem": {
+    "label": "Mostrar {item}"
+  },
+  "createOrImportItem": {
+    "label": "Crear o Importar {item}"
+  },
+  "apiKey": "Clave de API | Claves de API",
+  "settingsAndConfigs": "Configuraciones y Ajustes",
+  "selectItemLocation": "Seleccionar ubicación de {item}",
+  "icon": "Ícono | Íconos",
+  "defaultItem": "{item} Predeterminado",
+  "workspace": {
+    "label": "Espacio de Trabajo | Espacios de Trabajo",
+    "defaultWorkspace": "Espacio de Trabajo Predeterminado",
+    "removeWorkspace": {
+      "label": "Eliminar Espacio de Trabajo",
+      "confirmation": "¿Eliminar Espacio de Trabajo {name}?"
+    },
+    "deleteFromDisk": {
+      "label": "Eliminar Espacio de Trabajo y Eliminar del Disco"
+    },
+    "createAndSwitch": {
+      "label": "Crear y Cambiar",
+      "title": "Mantente Organizado con Espacios de Trabajo",
+      "description": "Mantén Chats, Pilas de Conocimiento, Prompts, etc. organizados por separado creando espacios de trabajo distintos en sus propias carpetas y compartidos entre dispositivos.",
+      "whatToCopy": "¿Qué copiar del espacio de trabajo {workspaceName}?",
+      "doNotCopyAnything": "No copiar nada; comenzar desde cero",
+      "apiKeysWarning": {
+        "description": "Copiar tus claves de API guardadas de forma segura desde el espacio de trabajo {workspaceName} sin actualizarlas primero no funcionará si este espacio de trabajo se importa en un dispositivo diferente.",
+        "updateAPIKeys": "Actualizar claves de API para el nuevo espacio de trabajo para poder usarlas en múltiples dispositivos",
+        "doNotUpdateAPIKeys": "No actualizar claves de API para el nuevo espacio de trabajo. (Entiendo que cualquier clave guardada de forma segura que se copie no funcionará como se espera si importo el espacio de trabajo en un dispositivo diferente)"
+      }
+    },
+    "switch": {
+      "success": "Cambiado al espacio de trabajo {workspaceName}",
+      "failure": "No se pudo cambiar al espacio de trabajo {workspaceName}",
+      "directoryMissing": "El directorio del espacio de trabajo {folderPath} no existe"
+    },
+    "remove": {
+      "confirmation": "¿Eliminar Espacio de Trabajo {workspaceName}?",
+      "description": "Esto solo eliminará el espacio de trabajo y NO eliminará la carpeta de datos guardados del disco.",
+      "withDataFolder": {
+        "label": "También eliminar la carpeta de datos. Esta acción no se puede deshacer.",
+        "description": "Esto eliminará el espacio de trabajo así como eliminará la carpeta de datos guardados del disco.",
+        "warning": "La carpeta de datos del espacio de trabajo en {folderPath} será eliminada"
+      }
+    }
+  },
+  "bookmarkedItem": "{item} Marcado",
+  "warning": "Advertencia",
+  "manageItem": "Gestionar {item}",
+  "itemInBeta": "{item} (Beta)",
+  "prompt": "Prompt | Prompts",
+  "quickPrompts": "Prompts Rápidos",
+  "modelSelector": "Selector de Modelos",
+  "promptLibrary": {
+    "label": "Biblioteca de Prompts"
+  },
+  "knowledgeStacks": {
+    "label": "Pila de Conocimiento | Pilas de Conocimiento"
+  },
+  "updateApp": {
+    "isAlreadyOnLatest": "Ya estás en la última versión",
+    "downloadingAndInstallingLatest": "Descargando e instalando la última versión"
+  },
+  "modelsInfo": "Información de Modelos",
+  "updateModelsInfo": {
+    "success": "Información de Modelos actualizada a la última versión",
+    "failure": "No se pudo actualizar la Información de Modelos a la última versión"
+  },
+  "think": "Pensar",
+  "seeWhatsNew": "Ve qué hay de nuevo en la última versión.",
+  "appUpdate": {
+    "latestVersionBeingDownloaded": "La última versión {version} de Msty está disponible y se está descargando. Por favor espera a que se complete la descarga.",
+    "latestVersionBeingInstalled": "La última versión {version} de Msty se está instalando. La aplicación se reiniciará automáticamente.",
+    "latestVersionReadyToBeInstalled": "La última versión {version} de Msty está disponible y lista para ser instalada. Por favor haz clic en el botón para aplicar la actualización."
+  },
+  "copyReasoningToClipboard": "Copiar texto de razonamiento al portapapeles",
+  "required": "Requerido",
+  "showModels": {
+    "label": "Mostrar Modelos",
+    "description": "Elige si mostrar modelos de {source} en el selector de modelos de chat."
+  },
+  "installedModels": "Modelos Instalados",
+  "reIndexItem": {
+    "action": "Re-indexar {item}",
+    "failure": "No se pudo re-indexar {item}",
+    "success": "{item} re-indexado",
+    "start": "Re-indexando {item}"
+  },
+  "fullTextSearchTips": {
+    "title": "Consejos Útiles",
+    "tips": {
+      "default": {
+        "description": "La búsqueda coincide con todas las palabras por defecto (ej., {example} → coincide con texto que contiene ambas palabras en cualquier orden)",
+        "example": "auto azul"
+      },
+      "partial": {
+        "description": "Usa {operator} para coincidencias parciales (ej., {example})",
+        "operator": "*",
+        "example": "corr* → corre, corriendo"
+      },
+      "or": {
+        "description": "Usa {operator} para coincidir con cualquier término (ej., {example})",
+        "operator": "OR",
+        "example": "manzana OR naranja"
+      },
+      "exact": {
+        "description": "Usa comillas dobles {operator} para coincidencias exactas (ej., {example})",
+        "operator": "\"\"",
+        "example": "\"auto azul\""
+      },
+      "specialCharacters": {
+        "description": "Usa {operator} para escapar caracteres especiales (ej., {example})",
+        "operator": "\"\"",
+        "example": "\"C++\", \"node.js\""
+      }
+    }
+  },
+  "splitWidth": "Ancho de División | Anchos de División",
+  "organization": "Organización | Organizaciones",
+  "endpoint": "Punto de Conexión | Puntos de Conexión",
+  "selfHosted": "Auto-hospedado",
+  "optional": "Opcional"
+}
